@@ -1,0 +1,3660 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_28568eeca6c64cb4a85fb579937ba5ac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_28568eeca6c64cb4a85fb579937ba5ac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_28568eeca6c64cb4a85fb579937ba5ac = L.map(
+                "map_28568eeca6c64cb4a85fb579937ba5ac",
+                {
+                    center: [40.4173, -82.9071],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93dcfff89b6c0a492b33206710bd43d4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_93dcfff89b6c0a492b33206710bd43d4.addTo(map_28568eeca6c64cb4a85fb579937ba5ac);
+        
+    
+            var marker_cluster_fd21573c29ab5a5680892f5f9d730d3c = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_5e3a58d50e609b3c8de2fc7b940bd063 = L.marker(
+                [41.0455414, -81.4337333],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_a6cedd36038b9f504a1864a79202a85e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cf08255d45fd6ebe0487003df8323ee = $(`<div id="html_9cf08255d45fd6ebe0487003df8323ee" style="width: 100.0%; height: 100.0%;">     <b>Akron, Albrecht Ave.</b><br>     Pastor: Robert Drummond Jr.<br>     3357 Albrecht Ave, Akron, OH 44312<br>     Phone: 330/628-2320<br>     <b>District 09 - Webb Parsons(DO)</b>     </div>`)[0];
+                popup_a6cedd36038b9f504a1864a79202a85e.setContent(html_9cf08255d45fd6ebe0487003df8323ee);
+            
+        
+
+        marker_5e3a58d50e609b3c8de2fc7b940bd063.bindPopup(popup_a6cedd36038b9f504a1864a79202a85e)
+        ;
+
+        
+    
+    
+            marker_5e3a58d50e609b3c8de2fc7b940bd063.bindTooltip(
+                `<div>
+                     Akron, Albrecht Ave.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a108db84afac0b0613b12006013d32c3 = L.marker(
+                [41.0597968, -81.4536264],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_d715e1775c1fa0206b5729892da124d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbe29cb7c51748a4546c136c4be430ae = $(`<div id="html_cbe29cb7c51748a4546c136c4be430ae" style="width: 100.0%; height: 100.0%;">     <b>Akron, East Market Street</b><br>     Pastor: Jake Nelson<br>     2084 E Market St., Akron, OH 44312<br>     Phone: 330/784-5114<br>     <b>District 09 - Webb Parsons(DO)</b>     </div>`)[0];
+                popup_d715e1775c1fa0206b5729892da124d5.setContent(html_cbe29cb7c51748a4546c136c4be430ae);
+            
+        
+
+        marker_a108db84afac0b0613b12006013d32c3.bindPopup(popup_d715e1775c1fa0206b5729892da124d5)
+        ;
+
+        
+    
+    
+            marker_a108db84afac0b0613b12006013d32c3.bindTooltip(
+                `<div>
+                     Akron, East Market Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1838cb1d325507f55d242abd35f20387 = L.marker(
+                [40.8797839, -82.3206311],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_bc7c3aa8b74e503f0d0115c3b889a630 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c82d9e03768b22e805b66a10a3791afb = $(`<div id="html_c82d9e03768b22e805b66a10a3791afb" style="width: 100.0%; height: 100.0%;">     <b>Ashland, Ashland</b><br>     Pastor: Daniel Stratford<br>     1420 Cottage St., Ashland, OH 44805<br>     Phone: 419/606-5485<br>     <b>District 12 - Tim Overly(DO)</b>     </div>`)[0];
+                popup_bc7c3aa8b74e503f0d0115c3b889a630.setContent(html_c82d9e03768b22e805b66a10a3791afb);
+            
+        
+
+        marker_1838cb1d325507f55d242abd35f20387.bindPopup(popup_bc7c3aa8b74e503f0d0115c3b889a630)
+        ;
+
+        
+    
+    
+            marker_1838cb1d325507f55d242abd35f20387.bindTooltip(
+                `<div>
+                     Ashland, Ashland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c6d601d276a5b06973147ca5b5ee3279 = L.marker(
+                [41.8862704, -80.7916761],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_95440e252d54a9c91c6ae0f49f5a07d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a413bff958bb36d6cb5257181407041 = $(`<div id="html_6a413bff958bb36d6cb5257181407041" style="width: 100.0%; height: 100.0%;">     <b>Ashtabula</b><br>     Pastor: Christopher Rogers<br>     2244 Harbor Ave., Ashtabula, OH 44004<br>     Phone: 440/997-3410<br>     <b>District 08 - Bill Isaacs(DO)</b>     </div>`)[0];
+                popup_95440e252d54a9c91c6ae0f49f5a07d2.setContent(html_6a413bff958bb36d6cb5257181407041);
+            
+        
+
+        marker_c6d601d276a5b06973147ca5b5ee3279.bindPopup(popup_95440e252d54a9c91c6ae0f49f5a07d2)
+        ;
+
+        
+    
+    
+            marker_c6d601d276a5b06973147ca5b5ee3279.bindTooltip(
+                `<div>
+                     Ashtabula
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24ccd9522eadd0ba7f134d0894536efe = L.marker(
+                [39.1046922, -84.1474785],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_f6e30bbe0db9b2e4a3c5dd6ad7fd14a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea94bf283572dee0df7e0361d23fd316 = $(`<div id="html_ea94bf283572dee0df7e0361d23fd316" style="width: 100.0%; height: 100.0%;">     <b>Batavia, Owensville</b><br>     Pastor: David Acree<br>     4703 Elmwood Road, Batavia, OH 45103<br>     Phone: 513/732-0451<br>     <b>District 29 - Michael Neal(DO)</b>     </div>`)[0];
+                popup_f6e30bbe0db9b2e4a3c5dd6ad7fd14a3.setContent(html_ea94bf283572dee0df7e0361d23fd316);
+            
+        
+
+        marker_24ccd9522eadd0ba7f134d0894536efe.bindPopup(popup_f6e30bbe0db9b2e4a3c5dd6ad7fd14a3)
+        ;
+
+        
+    
+    
+            marker_24ccd9522eadd0ba7f134d0894536efe.bindTooltip(
+                `<div>
+                     Batavia, Owensville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_54170dda14c4893fad24e05ebfc80eb8 = L.marker(
+                [39.768512, -84.07565],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_a0cacdd3326e176f2ae970e13481d6f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9109f70f705b650895263f4dab5d14c8 = $(`<div id="html_9109f70f705b650895263f4dab5d14c8" style="width: 100.0%; height: 100.0%;">     <b>Beavercreek</b><br>     Pastor: Larry W. Nichols<br>     2661 Grange Hall Road, Beavercreek, OH 45431<br>     Phone: 937/426-4931<br>     <b>District 23 - Todd Martin(DO)</b>     </div>`)[0];
+                popup_a0cacdd3326e176f2ae970e13481d6f2.setContent(html_9109f70f705b650895263f4dab5d14c8);
+            
+        
+
+        marker_54170dda14c4893fad24e05ebfc80eb8.bindPopup(popup_a0cacdd3326e176f2ae970e13481d6f2)
+        ;
+
+        
+    
+    
+            marker_54170dda14c4893fad24e05ebfc80eb8.bindTooltip(
+                `<div>
+                     Beavercreek
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f2e797e58bd88b820893aae603cc9fd = L.marker(
+                [39.2748138, -81.5858277],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_be89fac5987644079423143de9b96bdb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ef9b84bed7b7bf6bba0f00738b3268d = $(`<div id="html_4ef9b84bed7b7bf6bba0f00738b3268d" style="width: 100.0%; height: 100.0%;">     <b>Belpre, Father's House</b><br>     Pastor: Joshua French<br>     1305 Washington Blvd, Belpre, OH 45714<br>     Phone: 740/989-2303<br>     <b>District 15 - Francis Burkhart(DO)</b>     </div>`)[0];
+                popup_be89fac5987644079423143de9b96bdb.setContent(html_4ef9b84bed7b7bf6bba0f00738b3268d);
+            
+        
+
+        marker_2f2e797e58bd88b820893aae603cc9fd.bindPopup(popup_be89fac5987644079423143de9b96bdb)
+        ;
+
+        
+    
+    
+            marker_2f2e797e58bd88b820893aae603cc9fd.bindTooltip(
+                `<div>
+                     Belpre, Father's House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_53f0389f450be0aba3e658f3eb77c124 = L.marker(
+                [41.2345967, -81.84149],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_3a99f0e51e3ed9aa096f74d1a8cbba5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9af0c35fc4039487a1da3cfc06689081 = $(`<div id="html_9af0c35fc4039487a1da3cfc06689081" style="width: 100.0%; height: 100.0%;">     <b>Brunswick, Trinity Chapel</b><br>     Pastor: Charles French<br>     1480 Pearl Rd., Brunswick, OH 44212<br>     Phone: 330/225-0094<br>     <b>District 05 - Chad Britt(DO)</b>     </div>`)[0];
+                popup_3a99f0e51e3ed9aa096f74d1a8cbba5c.setContent(html_9af0c35fc4039487a1da3cfc06689081);
+            
+        
+
+        marker_53f0389f450be0aba3e658f3eb77c124.bindPopup(popup_3a99f0e51e3ed9aa096f74d1a8cbba5c)
+        ;
+
+        
+    
+    
+            marker_53f0389f450be0aba3e658f3eb77c124.bindTooltip(
+                `<div>
+                     Brunswick, Trinity Chapel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e3c7fd9c2ead40b173d8da82dae394c = L.marker(
+                [40.8292409, -81.4332348],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_a62f126ea88eb3c96b37838d2fcca263 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6d87fa5487209ed8b9fd9653eebf067 = $(`<div id="html_b6d87fa5487209ed8b9fd9653eebf067" style="width: 100.0%; height: 100.0%;">     <b>Canton, Woodlawn Church</b><br>     Pastor: Matt Coutcher<br>     2800 Woodlawn Ave NW, Canton, OH 44708<br>     Phone: 330/477-7271<br>     <b>District 09 - Webb Parsons(DO)</b>     </div>`)[0];
+                popup_a62f126ea88eb3c96b37838d2fcca263.setContent(html_b6d87fa5487209ed8b9fd9653eebf067);
+            
+        
+
+        marker_1e3c7fd9c2ead40b173d8da82dae394c.bindPopup(popup_a62f126ea88eb3c96b37838d2fcca263)
+        ;
+
+        
+    
+    
+            marker_1e3c7fd9c2ead40b173d8da82dae394c.bindTooltip(
+                `<div>
+                     Canton, Woodlawn Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_845b172ecb56de9138503e65bac575e5 = L.marker(
+                [40.3113453, -82.6863304],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_2a2300d78a83a0e2d31e5910bc2018ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f750f7a9091fb7f6344388b04f675eb = $(`<div id="html_6f750f7a9091fb7f6344388b04f675eb" style="width: 100.0%; height: 100.0%;">     <b>Centerburg</b><br>     Pastor: John Notter<br>     4697 Columbus Rd., Centerburg, OH 43011<br>     Phone: 740/625-6500<br>     <b>District 17 - Mike Roehrenbeck(DO)</b>     </div>`)[0];
+                popup_2a2300d78a83a0e2d31e5910bc2018ed.setContent(html_6f750f7a9091fb7f6344388b04f675eb);
+            
+        
+
+        marker_845b172ecb56de9138503e65bac575e5.bindPopup(popup_2a2300d78a83a0e2d31e5910bc2018ed)
+        ;
+
+        
+    
+    
+            marker_845b172ecb56de9138503e65bac575e5.bindTooltip(
+                `<div>
+                     Centerburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0d2b90be459f30cff95079913d7a2026 = L.marker(
+                [39.1419456, -84.6167738],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_d4596437ed8adcbbe4be1b6392042f46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6a928266209f9e7e44a260b6b2bf94a = $(`<div id="html_c6a928266209f9e7e44a260b6b2bf94a" style="width: 100.0%; height: 100.0%;">     <b>Cincinnati, Bridge of Hope</b><br>     Pastor: Dallas Howard<br>     2680 Roosevelt Ave, Cincinnati, OH 45231<br>     Phone: 513/554-4673<br>     <b>District 21 - Alan Weaver(DO)</b>     </div>`)[0];
+                popup_d4596437ed8adcbbe4be1b6392042f46.setContent(html_c6a928266209f9e7e44a260b6b2bf94a);
+            
+        
+
+        marker_0d2b90be459f30cff95079913d7a2026.bindPopup(popup_d4596437ed8adcbbe4be1b6392042f46)
+        ;
+
+        
+    
+    
+            marker_0d2b90be459f30cff95079913d7a2026.bindTooltip(
+                `<div>
+                     Cincinnati, Bridge of Hope
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0409ae14d80a3b95ceb3c35c27ed9c16 = L.marker(
+                [39.154697, -84.4576022],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_79e7b55d90ad48e10b268b3fcc1d846c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dac5ca270da71070cefe8d36913701a9 = $(`<div id="html_dac5ca270da71070cefe8d36913701a9" style="width: 100.0%; height: 100.0%;">     <b>Cincinnati, Cameron Avenue</b><br>     Pastor: Carolyn Ayers<br>     2156 Cameron Ave, Norwood, OH 45212<br>     Phone: 513/641-7247<br>     <b>District 30 - Jonathon Sears(DO)</b>     </div>`)[0];
+                popup_79e7b55d90ad48e10b268b3fcc1d846c.setContent(html_dac5ca270da71070cefe8d36913701a9);
+            
+        
+
+        marker_0409ae14d80a3b95ceb3c35c27ed9c16.bindPopup(popup_79e7b55d90ad48e10b268b3fcc1d846c)
+        ;
+
+        
+    
+    
+            marker_0409ae14d80a3b95ceb3c35c27ed9c16.bindTooltip(
+                `<div>
+                     Cincinnati, Cameron Avenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_92a34f82c58befc122f3be9969b3e932 = L.marker(
+                [39.2073675, -84.470452],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_27bf6bb6da54f48bf8748ab8eead9d63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39eb171fcff72deaf0cacc777217d6ca = $(`<div id="html_39eb171fcff72deaf0cacc777217d6ca" style="width: 100.0%; height: 100.0%;">     <b>Cincinnati, Metropolitan Harvest</b><br>     Pastor: Dale Endres<br>     8111 Woodbine Avenue, Cincinnati, OH 45216<br>     Phone: 513/761-6010<br>     <b>District 30 - Jonathon Sears(DO)</b>     </div>`)[0];
+                popup_27bf6bb6da54f48bf8748ab8eead9d63.setContent(html_39eb171fcff72deaf0cacc777217d6ca);
+            
+        
+
+        marker_92a34f82c58befc122f3be9969b3e932.bindPopup(popup_27bf6bb6da54f48bf8748ab8eead9d63)
+        ;
+
+        
+    
+    
+            marker_92a34f82c58befc122f3be9969b3e932.bindTooltip(
+                `<div>
+                     Cincinnati, Metropolitan Harvest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_52aca31d92641973b4ce7fb36f087256 = L.marker(
+                [39.1947373, -84.5746129],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_7fe961435dac6bf1af526729168d1d10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_985bad18b7bcae8e4f2cad0e06a04486 = $(`<div id="html_985bad18b7bcae8e4f2cad0e06a04486" style="width: 100.0%; height: 100.0%;">     <b>Cincinnati, Praise Chapel</b><br>     Pastor: Jonathan Sears<br>     5611 Colerain Avenue, Cincinnati, OH 45239<br>     Phone: 513/741-4738<br>     <b>District 30 - Jonathon Sears(DO)</b>     </div>`)[0];
+                popup_7fe961435dac6bf1af526729168d1d10.setContent(html_985bad18b7bcae8e4f2cad0e06a04486);
+            
+        
+
+        marker_52aca31d92641973b4ce7fb36f087256.bindPopup(popup_7fe961435dac6bf1af526729168d1d10)
+        ;
+
+        
+    
+    
+            marker_52aca31d92641973b4ce7fb36f087256.bindTooltip(
+                `<div>
+                     Cincinnati, Praise Chapel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_583d0c481731c54948dcc9016379d6a8 = L.marker(
+                [39.6062311, -82.928576],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_6f5254ee921f4793c8cd5044aa530b34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2d374c0d2a7cf8315a62e8deb292a7c = $(`<div id="html_a2d374c0d2a7cf8315a62e8deb292a7c" style="width: 100.0%; height: 100.0%;">     <b>Circleville, Nicholas Drive</b><br>     Pastor: Keith Williams<br>     400 Nicholas Drive, Circleville, OH 43113<br>     Phone: 740/474-2894<br>     <b>District 16 - Randy Barr(DO)</b>     </div>`)[0];
+                popup_6f5254ee921f4793c8cd5044aa530b34.setContent(html_a2d374c0d2a7cf8315a62e8deb292a7c);
+            
+        
+
+        marker_583d0c481731c54948dcc9016379d6a8.bindPopup(popup_6f5254ee921f4793c8cd5044aa530b34)
+        ;
+
+        
+    
+    
+            marker_583d0c481731c54948dcc9016379d6a8.bindTooltip(
+                `<div>
+                     Circleville, Nicholas Drive
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bfb1fefcc21c6868e8edec111d04dca2 = L.marker(
+                [41.454061, -81.773958],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_f7b83885ff5df99fc17fe3c440615cdb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_049bb4147e9534cad263776e87a72ded = $(`<div id="html_049bb4147e9534cad263776e87a72ded" style="width: 100.0%; height: 100.0%;">     <b>Cleveland, Freedom Church</b><br>     Pastor: Josh Burgess<br>     12401 Cooley Ave., Cleveland, OH 44111<br>     Phone: 216/671-4619<br>     <b>District 06 - Brian Palmer(DO)</b>     </div>`)[0];
+                popup_f7b83885ff5df99fc17fe3c440615cdb.setContent(html_049bb4147e9534cad263776e87a72ded);
+            
+        
+
+        marker_bfb1fefcc21c6868e8edec111d04dca2.bindPopup(popup_f7b83885ff5df99fc17fe3c440615cdb)
+        ;
+
+        
+    
+    
+            marker_bfb1fefcc21c6868e8edec111d04dca2.bindTooltip(
+                `<div>
+                     Cleveland, Freedom Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6eb3697b8f249c085919a1f63848ed45 = L.marker(
+                [41.4300265, -81.7148026],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_ab5bfbd05133b94a3340992d75f88436 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe307251b5387a28121f6e734312330f = $(`<div id="html_fe307251b5387a28121f6e734312330f" style="width: 100.0%; height: 100.0%;">     <b>Cleveland, Pearlbrook</b><br>     Pastor: Gary Lauzon<br>     4644 Pearl Rd, Cleveland, OH 44109<br>     Phone: 216/299-6343<br>     <b>District 06 - Brian Palmer(DO)</b>     </div>`)[0];
+                popup_ab5bfbd05133b94a3340992d75f88436.setContent(html_fe307251b5387a28121f6e734312330f);
+            
+        
+
+        marker_6eb3697b8f249c085919a1f63848ed45.bindPopup(popup_ab5bfbd05133b94a3340992d75f88436)
+        ;
+
+        
+    
+    
+            marker_6eb3697b8f249c085919a1f63848ed45.bindTooltip(
+                `<div>
+                     Cleveland, Pearlbrook
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6804aca82729fc7d9eb656978d04bcf9 = L.marker(
+                [41.4187666, -81.780796],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_e3e545694a60b1657607e9f1e393fc58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2967ac8268ed291857a3c6ac9c3072f0 = $(`<div id="html_2967ac8268ed291857a3c6ac9c3072f0" style="width: 100.0%; height: 100.0%;">     <b>Cleveland, Soldiers for God Ministries-Cleveland</b><br>     Pastor: Gino Miguel<br>     6846 W. 130th Street, Cleveland, OH 44130<br>     Phone: 321/402-6125<br>     <b>District 06 - Brian Palmer(DO)</b>     </div>`)[0];
+                popup_e3e545694a60b1657607e9f1e393fc58.setContent(html_2967ac8268ed291857a3c6ac9c3072f0);
+            
+        
+
+        marker_6804aca82729fc7d9eb656978d04bcf9.bindPopup(popup_e3e545694a60b1657607e9f1e393fc58)
+        ;
+
+        
+    
+    
+            marker_6804aca82729fc7d9eb656978d04bcf9.bindTooltip(
+                `<div>
+                     Cleveland, Soldiers for God Ministries-Cleveland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c6ae06639a3696d4150ae9b56f8b2e29 = L.marker(
+                [41.4681136, -81.726001],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_997db7073e56cf75af326e8fb2254b70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_296825d7536cb9aef1bb34358f439f55 = $(`<div id="html_296825d7536cb9aef1bb34358f439f55" style="width: 100.0%; height: 100.0%;">     <b>Cleveland, West 58th St.</b><br>     Pastor: Brian Palmer<br>     3150 W 58Th St, Cleveland, OH 44102<br>     Phone: 216/281-2958<br>     <b>District 06 - Brian Palmer(DO)</b>     </div>`)[0];
+                popup_997db7073e56cf75af326e8fb2254b70.setContent(html_296825d7536cb9aef1bb34358f439f55);
+            
+        
+
+        marker_c6ae06639a3696d4150ae9b56f8b2e29.bindPopup(popup_997db7073e56cf75af326e8fb2254b70)
+        ;
+
+        
+    
+    
+            marker_c6ae06639a3696d4150ae9b56f8b2e29.bindTooltip(
+                `<div>
+                     Cleveland, West 58th St.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ab706fb4fa8453fb7737003de95ae442 = L.marker(
+                [41.2953389, -82.974936],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_38b9646f2ec85c599be950479403ec86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e30ba174d97255a2541795c964b484c = $(`<div id="html_4e30ba174d97255a2541795c964b484c" style="width: 100.0%; height: 100.0%;">     <b>Clyde</b><br>     Pastor: nan<br>     1461 S. Main Street, Clyde, OH 43410<br>     Phone: 419/547-0012<br>     <b>District 02 - Gene Paul(DO)</b>     </div>`)[0];
+                popup_38b9646f2ec85c599be950479403ec86.setContent(html_4e30ba174d97255a2541795c964b484c);
+            
+        
+
+        marker_ab706fb4fa8453fb7737003de95ae442.bindPopup(popup_38b9646f2ec85c599be950479403ec86)
+        ;
+
+        
+    
+    
+            marker_ab706fb4fa8453fb7737003de95ae442.bindTooltip(
+                `<div>
+                     Clyde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_800b9d2a906f4df7171308450a83881f = L.marker(
+                [39.9281027, -83.0927439],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_7b6502106ec3b44508e5b33f1955f1aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7919b004c202f335ef47954498a5a3ef = $(`<div id="html_7919b004c202f335ef47954498a5a3ef" style="width: 100.0%; height: 100.0%;">     <b>Columbus, Clime Road</b><br>     Pastor: Wayne Dean<br>     3600 Clime Road, Columbus, OH 43228<br>     Phone: 614/279-9057<br>     <b>District 16 - Randy Barr(DO)</b>     </div>`)[0];
+                popup_7b6502106ec3b44508e5b33f1955f1aa.setContent(html_7919b004c202f335ef47954498a5a3ef);
+            
+        
+
+        marker_800b9d2a906f4df7171308450a83881f.bindPopup(popup_7b6502106ec3b44508e5b33f1955f1aa)
+        ;
+
+        
+    
+    
+            marker_800b9d2a906f4df7171308450a83881f.bindTooltip(
+                `<div>
+                     Columbus, Clime Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_48220f4e1fd0f6bca0f72486e48aa389 = L.marker(
+                [39.9747017, -83.093748],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_4016161da7bc1a830fa876299840c455 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac05ba9677de31b219fc649fff87c946 = $(`<div id="html_ac05ba9677de31b219fc649fff87c946" style="width: 100.0%; height: 100.0%;">     <b>Columbus, Embassy of God</b><br>     Pastor: Alex Solokha<br>     3308 El Paso Drive, Columbus, OH 43204<br>     Phone: 614/439-5397<br>     <b>District 16 - Randy Barr(DO)</b>     </div>`)[0];
+                popup_4016161da7bc1a830fa876299840c455.setContent(html_ac05ba9677de31b219fc649fff87c946);
+            
+        
+
+        marker_48220f4e1fd0f6bca0f72486e48aa389.bindPopup(popup_4016161da7bc1a830fa876299840c455)
+        ;
+
+        
+    
+    
+            marker_48220f4e1fd0f6bca0f72486e48aa389.bindTooltip(
+                `<div>
+                     Columbus, Embassy of God
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_108c9ab8e93ef99fa164fa2c09942306 = L.marker(
+                [40.0619554, -82.9178051],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_e3c2e94277243f9f05b03fec219af974 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc5b89af3472432cee9fc45738e13d77 = $(`<div id="html_fc5b89af3472432cee9fc45738e13d77" style="width: 100.0%; height: 100.0%;">     <b>Columbus, Life Church at Easton</b><br>     Pastor: James Schulker<br>     5000 Sunbury Road, Columbus, OH 43230<br>     Phone: 614/476-5002<br>     <b>District 17 - Mike Roehrenbeck(DO)</b>     </div>`)[0];
+                popup_e3c2e94277243f9f05b03fec219af974.setContent(html_fc5b89af3472432cee9fc45738e13d77);
+            
+        
+
+        marker_108c9ab8e93ef99fa164fa2c09942306.bindPopup(popup_e3c2e94277243f9f05b03fec219af974)
+        ;
+
+        
+    
+    
+            marker_108c9ab8e93ef99fa164fa2c09942306.bindTooltip(
+                `<div>
+                     Columbus, Life Church at Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_af1697d59862448ba222cb000d66fb94 = L.marker(
+                [39.8929817, -82.9869441],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_65a9fec4d49b0b1685e10b63dfc2cad8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_890694bfbda0f712b967af337be86288 = $(`<div id="html_890694bfbda0f712b967af337be86288" style="width: 100.0%; height: 100.0%;">     <b>Columbus, Parsons Avenue</b><br>     Pastor: Brice Utt<br>     3389 Parsons Avenue, Columbus, OH 43207<br>     Phone: 614/491-0402<br>     <b>District 17 - Mike Roehrenbeck(DO)</b>     </div>`)[0];
+                popup_65a9fec4d49b0b1685e10b63dfc2cad8.setContent(html_890694bfbda0f712b967af337be86288);
+            
+        
+
+        marker_af1697d59862448ba222cb000d66fb94.bindPopup(popup_65a9fec4d49b0b1685e10b63dfc2cad8)
+        ;
+
+        
+    
+    
+            marker_af1697d59862448ba222cb000d66fb94.bindTooltip(
+                `<div>
+                     Columbus, Parsons Avenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eed4c2531e9afceda83c4b15cb41fbaf = L.marker(
+                [40.1178294, -83.1747211],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_5ed759d64be3a62b0fa6407e81889ed7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26ee4a919886f86a6fb0957aaab28018 = $(`<div id="html_26ee4a919886f86a6fb0957aaab28018" style="width: 100.0%; height: 100.0%;">     <b>Columbus, Soldiers for God Ministries-Columbus</b><br>     Pastor: Kevin Johns<br>     6832 Royal Plume Drive, Dublin, OH 43016<br>     Phone: 321/318-3103<br>     <b>District 17 - Mike Roehrenbeck(DO)</b>     </div>`)[0];
+                popup_5ed759d64be3a62b0fa6407e81889ed7.setContent(html_26ee4a919886f86a6fb0957aaab28018);
+            
+        
+
+        marker_eed4c2531e9afceda83c4b15cb41fbaf.bindPopup(popup_5ed759d64be3a62b0fa6407e81889ed7)
+        ;
+
+        
+    
+    
+            marker_eed4c2531e9afceda83c4b15cb41fbaf.bindTooltip(
+                `<div>
+                     Columbus, Soldiers for God Ministries-Columbus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_47194c8a2bce377bd6bae76c2425fead = L.marker(
+                [39.973312, -83.092066],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_766b60c6c9d0395bb01acf4a99b0fe5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c10cb6ff3fbdd44633adb0126b1b94d9 = $(`<div id="html_c10cb6ff3fbdd44633adb0126b1b94d9" style="width: 100.0%; height: 100.0%;">     <b>Columbus, The Potter's House</b><br>     Pastor: Michael Oldfield<br>     3220 Lowell Drive, Columbus, OH 43204<br>     Phone: 614/279-2311<br>     <b>District 17 - Mike Roehrenbeck(DO)</b>     </div>`)[0];
+                popup_766b60c6c9d0395bb01acf4a99b0fe5a.setContent(html_c10cb6ff3fbdd44633adb0126b1b94d9);
+            
+        
+
+        marker_47194c8a2bce377bd6bae76c2425fead.bindPopup(popup_766b60c6c9d0395bb01acf4a99b0fe5a)
+        ;
+
+        
+    
+    
+            marker_47194c8a2bce377bd6bae76c2425fead.bindTooltip(
+                `<div>
+                     Columbus, The Potter's House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_20e448d1233044dfecb0e6a823406b34 = L.marker(
+                [41.9367298, -80.5715336],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_12e3623075df7d8aed517bf0144fdf52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_107c7212eef6fde1a00d2a07dab7ca85 = $(`<div id="html_107c7212eef6fde1a00d2a07dab7ca85" style="width: 100.0%; height: 100.0%;">     <b>Conneaut</b><br>     Pastor: Carson Robson<br>     5327 Center Rd., Conneaut, OH 44030<br>     Phone: 440/594-7136<br>     <b>District 08 - Bill Isaacs(DO)</b>     </div>`)[0];
+                popup_12e3623075df7d8aed517bf0144fdf52.setContent(html_107c7212eef6fde1a00d2a07dab7ca85);
+            
+        
+
+        marker_20e448d1233044dfecb0e6a823406b34.bindPopup(popup_12e3623075df7d8aed517bf0144fdf52)
+        ;
+
+        
+    
+    
+            marker_20e448d1233044dfecb0e6a823406b34.bindTooltip(
+                `<div>
+                     Conneaut
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ac8d73de11919ea5a5325baebbcbafa3 = L.marker(
+                [41.1357927, -81.4873272],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_6e4e8eeaf58e2f8cea34326cf36d00ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b50d6e28f50b3438714251a03f6c3ea8 = $(`<div id="html_b50d6e28f50b3438714251a03f6c3ea8" style="width: 100.0%; height: 100.0%;">     <b>Cuyahoga Falls</b><br>     Pastor: Floyd Wimer<br>     2106 4th St, Cuyahoga Falls, OH 44221<br>     Phone: 330/929-7555<br>     <b>District 09 - Webb Parsons(DO)</b>     </div>`)[0];
+                popup_6e4e8eeaf58e2f8cea34326cf36d00ca.setContent(html_b50d6e28f50b3438714251a03f6c3ea8);
+            
+        
+
+        marker_ac8d73de11919ea5a5325baebbcbafa3.bindPopup(popup_6e4e8eeaf58e2f8cea34326cf36d00ca)
+        ;
+
+        
+    
+    
+            marker_ac8d73de11919ea5a5325baebbcbafa3.bindTooltip(
+                `<div>
+                     Cuyahoga Falls
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d2c06c54207034e73e10e5844898fb1d = L.marker(
+                [39.7740655, -84.1739678],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_629a2bbcf0018c29ff5d046cede50efa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae8ab3596bb927dcdd1b6e502d0e2064 = $(`<div id="html_ae8ab3596bb927dcdd1b6e502d0e2064" style="width: 100.0%; height: 100.0%;">     <b>Dayton, Air Street</b><br>     Pastor: P. David Ball<br>     235 Air Street, Dayton, OH 45404<br>     Phone: 937/461-2528<br>     <b>District 22 - David Renfro(DO)</b>     </div>`)[0];
+                popup_629a2bbcf0018c29ff5d046cede50efa.setContent(html_ae8ab3596bb927dcdd1b6e502d0e2064);
+            
+        
+
+        marker_d2c06c54207034e73e10e5844898fb1d.bindPopup(popup_629a2bbcf0018c29ff5d046cede50efa)
+        ;
+
+        
+    
+    
+            marker_d2c06c54207034e73e10e5844898fb1d.bindTooltip(
+                `<div>
+                     Dayton, Air Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7fdce1a461cd38ce297639e0e129b63d = L.marker(
+                [39.7597441, -84.1251577],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_6aa43661eeaeec7bf8d3952bc88e9438 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_346aaae11da53ba3b5cc0562f566c3f4 = $(`<div id="html_346aaae11da53ba3b5cc0562f566c3f4" style="width: 100.0%; height: 100.0%;">     <b>Dayton, Eastview</b><br>     Pastor: Leon Collins<br>     5289 Burkhardt Road, Dayton, OH 45431<br>     Phone: 937/254-3261<br>     <b>District 22 - David Renfro(DO)</b>     </div>`)[0];
+                popup_6aa43661eeaeec7bf8d3952bc88e9438.setContent(html_346aaae11da53ba3b5cc0562f566c3f4);
+            
+        
+
+        marker_7fdce1a461cd38ce297639e0e129b63d.bindPopup(popup_6aa43661eeaeec7bf8d3952bc88e9438)
+        ;
+
+        
+    
+    
+            marker_7fdce1a461cd38ce297639e0e129b63d.bindTooltip(
+                `<div>
+                     Dayton, Eastview
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f51d96f9c0d2ba93881bd3ab3efa8661 = L.marker(
+                [39.7688938, -84.1373714],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_2a9a18031964a3a1a240b32f9cb2af0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d7cfc48da2c0f31ce5ce3986981c092 = $(`<div id="html_4d7cfc48da2c0f31ce5ce3986981c092" style="width: 100.0%; height: 100.0%;">     <b>Dayton, Evangel</b><br>     Pastor: David Renfro<br>     132 North Smithville Road, Dayton, OH 45403<br>     Phone: 937/253-8342<br>     <b>District 22 - David Renfro(DO)</b>     </div>`)[0];
+                popup_2a9a18031964a3a1a240b32f9cb2af0b.setContent(html_4d7cfc48da2c0f31ce5ce3986981c092);
+            
+        
+
+        marker_f51d96f9c0d2ba93881bd3ab3efa8661.bindPopup(popup_2a9a18031964a3a1a240b32f9cb2af0b)
+        ;
+
+        
+    
+    
+            marker_f51d96f9c0d2ba93881bd3ab3efa8661.bindTooltip(
+                `<div>
+                     Dayton, Evangel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3d2fc5a556bc4b30820ade3a6c6df5b1 = L.marker(
+                [41.2814414, -84.3334516],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_c3431591b0c9e6fe02343c570f1dbc1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6c1b7e92e109855c0cf0643615977af = $(`<div id="html_c6c1b7e92e109855c0cf0643615977af" style="width: 100.0%; height: 100.0%;">     <b>Defiance, Rock of Ages</b><br>     Pastor: Velma Lewis<br>     340 Greenhouse Ave., Defiance, OH 43512<br>     Phone: 419/782-3966<br>     <b>District 04 - (DO)</b>     </div>`)[0];
+                popup_c3431591b0c9e6fe02343c570f1dbc1b.setContent(html_c6c1b7e92e109855c0cf0643615977af);
+            
+        
+
+        marker_3d2fc5a556bc4b30820ade3a6c6df5b1.bindPopup(popup_c3431591b0c9e6fe02343c570f1dbc1b)
+        ;
+
+        
+    
+    
+            marker_3d2fc5a556bc4b30820ade3a6c6df5b1.bindTooltip(
+                `<div>
+                     Defiance, Rock of Ages
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77a7d2ea9e83b2a6309ab9c0980f1df2 = L.marker(
+                [40.3043071, -83.0577703],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_2f823f8c0dece97b4204053eda385120 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_744e7bf1996a3d06550da33ed1b1c9e4 = $(`<div id="html_744e7bf1996a3d06550da33ed1b1c9e4" style="width: 100.0%; height: 100.0%;">     <b>Delaware, Life Builders Worship Center</b><br>     Pastor: Daniel Maurer<br>     185 Lake St., Delaware, OH 43015<br>     Phone: 740/363-1630<br>     <b>District 17 - Mike Roehrenbeck(DO)</b>     </div>`)[0];
+                popup_2f823f8c0dece97b4204053eda385120.setContent(html_744e7bf1996a3d06550da33ed1b1c9e4);
+            
+        
+
+        marker_77a7d2ea9e83b2a6309ab9c0980f1df2.bindPopup(popup_2f823f8c0dece97b4204053eda385120)
+        ;
+
+        
+    
+    
+            marker_77a7d2ea9e83b2a6309ab9c0980f1df2.bindTooltip(
+                `<div>
+                     Delaware, Life Builders Worship Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1e28f5086d2fdb27bec0d0038a1267e = L.marker(
+                [40.5117583, -81.4676689],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_e021d66ac78550e52e1e236c37ea42f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6ef213ab2c5517c88f972ef9523572a = $(`<div id="html_b6ef213ab2c5517c88f972ef9523572a" style="width: 100.0%; height: 100.0%;">     <b>Dover, New Life</b><br>     Pastor: Larry Gross<br>     115 South Avenue, Dover, OH 44622<br>     Phone: 330/364-5147<br>     <b>District 10 - Steve Stewart(DO)</b>     </div>`)[0];
+                popup_e021d66ac78550e52e1e236c37ea42f9.setContent(html_b6ef213ab2c5517c88f972ef9523572a);
+            
+        
+
+        marker_a1e28f5086d2fdb27bec0d0038a1267e.bindPopup(popup_e021d66ac78550e52e1e236c37ea42f9)
+        ;
+
+        
+    
+    
+            marker_a1e28f5086d2fdb27bec0d0038a1267e.bindTooltip(
+                `<div>
+                     Dover, New Life
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_aadb0cc42582caf60a1fa4e050b8f4be = L.marker(
+                [40.6259391, -80.5917053],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_08275ceb0fa497c56c82ee0b6b0bd406 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b434452960f86f849beb8375adc3ed41 = $(`<div id="html_b434452960f86f849beb8375adc3ed41" style="width: 100.0%; height: 100.0%;">     <b>East Liverpool, Tree of Life COG</b><br>     Pastor: nan<br>     926 W. 8th St., East Liverpool, OH 43920<br>     Phone: 330/368-5069<br>     <b>District 13 - Francis Burkhart(DO)</b>     </div>`)[0];
+                popup_08275ceb0fa497c56c82ee0b6b0bd406.setContent(html_b434452960f86f849beb8375adc3ed41);
+            
+        
+
+        marker_aadb0cc42582caf60a1fa4e050b8f4be.bindPopup(popup_08275ceb0fa497c56c82ee0b6b0bd406)
+        ;
+
+        
+    
+    
+            marker_aadb0cc42582caf60a1fa4e050b8f4be.bindTooltip(
+                `<div>
+                     East Liverpool, Tree of Life COG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ae1445e8aeb9acd120693caf8e946dc6 = L.marker(
+                [39.7381404, -84.6299149],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_a63a0e75600f27e729b3d997e7b59c34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27d73b386f4356ff4820ae4814f2a225 = $(`<div id="html_27d73b386f4356ff4820ae4814f2a225" style="width: 100.0%; height: 100.0%;">     <b>Eaton, Open Door</b><br>     Pastor: Paul Bane<br>     215 South Franklin Street, Eaton, OH 45320<br>     Phone: 937/687-2472<br>     <b>District 18 - Chris Cramer(DO)</b>     </div>`)[0];
+                popup_a63a0e75600f27e729b3d997e7b59c34.setContent(html_27d73b386f4356ff4820ae4814f2a225);
+            
+        
+
+        marker_ae1445e8aeb9acd120693caf8e946dc6.bindPopup(popup_a63a0e75600f27e729b3d997e7b59c34)
+        ;
+
+        
+    
+    
+            marker_ae1445e8aeb9acd120693caf8e946dc6.bindTooltip(
+                `<div>
+                     Eaton, Open Door
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b1089daef4a0c8448d37b9012b6b18b4 = L.marker(
+                [41.5983719, -81.5092852],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_45e6f3bbb0903eb2abb86c0457263044 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_476f761b57ddbf17b1910bdf20ab3887 = $(`<div id="html_476f761b57ddbf17b1910bdf20ab3887" style="width: 100.0%; height: 100.0%;">     <b>Euclid, Living Waters</b><br>     Pastor: Thomas Owens<br>     970 E. 250th Street, Euclid, OH 44132<br>     Phone: 216/289-6673<br>     <b>District 08 - Bill Isaacs(DO)</b>     </div>`)[0];
+                popup_45e6f3bbb0903eb2abb86c0457263044.setContent(html_476f761b57ddbf17b1910bdf20ab3887);
+            
+        
+
+        marker_b1089daef4a0c8448d37b9012b6b18b4.bindPopup(popup_45e6f3bbb0903eb2abb86c0457263044)
+        ;
+
+        
+    
+    
+            marker_b1089daef4a0c8448d37b9012b6b18b4.bindTooltip(
+                `<div>
+                     Euclid, Living Waters
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd751d2fd2b241deea0a37d14b0e819a = L.marker(
+                [39.8023758, -84.0324267],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_ca3a4365b2075b4398baaa5a535bfd3c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38df32f3efa4f771a897b50607b2f95d = $(`<div id="html_38df32f3efa4f771a897b50607b2f95d" style="width: 100.0%; height: 100.0%;">     <b>Fairborn, Risen Hope Church</b><br>     Pastor: Dane Pritchard<br>     302 State Street, Fairborn, OH 45324<br>     Phone: 937/520-6623<br>     <b>District 23 - Todd Martin(DO)</b>     </div>`)[0];
+                popup_ca3a4365b2075b4398baaa5a535bfd3c.setContent(html_38df32f3efa4f771a897b50607b2f95d);
+            
+        
+
+        marker_fd751d2fd2b241deea0a37d14b0e819a.bindPopup(popup_ca3a4365b2075b4398baaa5a535bfd3c)
+        ;
+
+        
+    
+    
+            marker_fd751d2fd2b241deea0a37d14b0e819a.bindTooltip(
+                `<div>
+                     Fairborn, Risen Hope Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e2b5beb40b65630cd2dce07a1f42d9af = L.marker(
+                [39.1428171, -84.3936794],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_ff4cd72dbd9c41dcda01274eade9d54a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f20ace582e3d066278955301eaf88de6 = $(`<div id="html_f20ace582e3d066278955301eaf88de6" style="width: 100.0%; height: 100.0%;">     <b>Fairfax, New Life Worship Center</b><br>     Pastor: Larry Gee<br>     3731 Southern Avenue, Fairfax, OH 45227<br>     Phone: 513/271-3605<br>     <b>District 30 - Jonathon Sears(DO)</b>     </div>`)[0];
+                popup_ff4cd72dbd9c41dcda01274eade9d54a.setContent(html_f20ace582e3d066278955301eaf88de6);
+            
+        
+
+        marker_e2b5beb40b65630cd2dce07a1f42d9af.bindPopup(popup_ff4cd72dbd9c41dcda01274eade9d54a)
+        ;
+
+        
+    
+    
+            marker_e2b5beb40b65630cd2dce07a1f42d9af.bindTooltip(
+                `<div>
+                     Fairfax, New Life Worship Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c3a0ce2bca7438fa059d11eeab7606f8 = L.marker(
+                [41.0736189, -83.6591799],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_fc37062ceabf9277c9bdcd23547686ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a51c0cf025e467684a805558a589ccb3 = $(`<div id="html_a51c0cf025e467684a805558a589ccb3" style="width: 100.0%; height: 100.0%;">     <b>Findlay, The Upper Room</b><br>     Pastor: Kenneth McBeath<br>     520 W Bigelow Ave., Findlay, OH 45840<br>     Phone: 419/422-8017<br>     <b>District 01 - Daniel Lucien(DO)</b>     </div>`)[0];
+                popup_fc37062ceabf9277c9bdcd23547686ee.setContent(html_a51c0cf025e467684a805558a589ccb3);
+            
+        
+
+        marker_c3a0ce2bca7438fa059d11eeab7606f8.bindPopup(popup_fc37062ceabf9277c9bdcd23547686ee)
+        ;
+
+        
+    
+    
+            marker_c3a0ce2bca7438fa059d11eeab7606f8.bindTooltip(
+                `<div>
+                     Findlay, The Upper Room
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_280e960e0af871277d7d819219cefd6c = L.marker(
+                [41.1566833, -83.4154709],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_c2ad3a18d666c895d66c52dd014cd35c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc9c76fc130eb61556562ec5570ebfa1 = $(`<div id="html_dc9c76fc130eb61556562ec5570ebfa1" style="width: 100.0%; height: 100.0%;">     <b>Fostoria</b><br>     Pastor: Dan Lucien<br>     124 W. Tiffin St., Fostoria, OH 44830<br>     Phone: 419/436-7217<br>     <b>District 01 - Daniel Lucien(DO)</b>     </div>`)[0];
+                popup_c2ad3a18d666c895d66c52dd014cd35c.setContent(html_dc9c76fc130eb61556562ec5570ebfa1);
+            
+        
+
+        marker_280e960e0af871277d7d819219cefd6c.bindPopup(popup_c2ad3a18d666c895d66c52dd014cd35c)
+        ;
+
+        
+    
+    
+            marker_280e960e0af871277d7d819219cefd6c.bindTooltip(
+                `<div>
+                     Fostoria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_92cbaea6a014d5597c00939dee07a034 = L.marker(
+                [38.6241118, -82.846811],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_81ed86a90039635783df825d8c8be646 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f564c462c04011cd0ede13fce95d18e = $(`<div id="html_9f564c462c04011cd0ede13fce95d18e" style="width: 100.0%; height: 100.0%;">     <b>Franklin Furnace, Franklin Furnace Church of God</b><br>     Pastor: Ronnie Johnson<br>     466 Maynard Ave, Franklin Furnace, OH 45629<br>     Phone: 606/331-0080<br>     <b>District 27 - Dean Thompson(DO)</b>     </div>`)[0];
+                popup_81ed86a90039635783df825d8c8be646.setContent(html_9f564c462c04011cd0ede13fce95d18e);
+            
+        
+
+        marker_92cbaea6a014d5597c00939dee07a034.bindPopup(popup_81ed86a90039635783df825d8c8be646)
+        ;
+
+        
+    
+    
+            marker_92cbaea6a014d5597c00939dee07a034.bindTooltip(
+                `<div>
+                     Franklin Furnace, Franklin Furnace Church of God
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f0dc1fa9eb40ee429ea903e9b66f06f5 = L.marker(
+                [39.5662183, -84.2813097],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_75c3ad2a97853f63256dbb154d71a70b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71a5e2e4907a8c4092c05dd288515c86 = $(`<div id="html_71a5e2e4907a8c4092c05dd288515c86" style="width: 100.0%; height: 100.0%;">     <b>Franklin, Freedom Worship Center</b><br>     Pastor: Chris Cramer<br>     90 Deardoff Road, Franklin, OH 45005<br>     Phone: 937/704-9794<br>     <b>District 18 - Chris Cramer(DO)</b>     </div>`)[0];
+                popup_75c3ad2a97853f63256dbb154d71a70b.setContent(html_71a5e2e4907a8c4092c05dd288515c86);
+            
+        
+
+        marker_f0dc1fa9eb40ee429ea903e9b66f06f5.bindPopup(popup_75c3ad2a97853f63256dbb154d71a70b)
+        ;
+
+        
+    
+    
+            marker_f0dc1fa9eb40ee429ea903e9b66f06f5.bindTooltip(
+                `<div>
+                     Franklin, Freedom Worship Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_382f09e5d98f1759f1a591d4ba5324f5 = L.marker(
+                [41.344219, -83.11745],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_46d55c569f5267bb7a3ef1a32aa98ddc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e96915cf84b8e973a3dc82a128c437a = $(`<div id="html_0e96915cf84b8e973a3dc82a128c437a" style="width: 100.0%; height: 100.0%;">     <b>Fremont, River of Life</b><br>     Pastor: Vincente Acevedo<br>     300 S Park Ave, Fremont, OH 43420<br>     Phone: 419/332-2001<br>     <b>District 01 - Daniel Lucien(DO)</b>     </div>`)[0];
+                popup_46d55c569f5267bb7a3ef1a32aa98ddc.setContent(html_0e96915cf84b8e973a3dc82a128c437a);
+            
+        
+
+        marker_382f09e5d98f1759f1a591d4ba5324f5.bindPopup(popup_46d55c569f5267bb7a3ef1a32aa98ddc)
+        ;
+
+        
+    
+    
+            marker_382f09e5d98f1759f1a591d4ba5324f5.bindTooltip(
+                `<div>
+                     Fremont, River of Life
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a367fa8acb6dc576512033aaa73b56c = L.marker(
+                [41.8058024, -80.9164983],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_4d7808551501e371d2f4b803321aa182 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8123fda6b1eed3b28c2bfd6335e29230 = $(`<div id="html_8123fda6b1eed3b28c2bfd6335e29230" style="width: 100.0%; height: 100.0%;">     <b>Geneva, Evangel Temple</b><br>     Pastor: Mark Bair<br>     3011 S. Myers Rd., Geneva, OH 44041<br>     Phone: 440/466-2243<br>     <b>District 08 - Bill Isaacs(DO)</b>     </div>`)[0];
+                popup_4d7808551501e371d2f4b803321aa182.setContent(html_8123fda6b1eed3b28c2bfd6335e29230);
+            
+        
+
+        marker_8a367fa8acb6dc576512033aaa73b56c.bindPopup(popup_4d7808551501e371d2f4b803321aa182)
+        ;
+
+        
+    
+    
+            marker_8a367fa8acb6dc576512033aaa73b56c.bindTooltip(
+                `<div>
+                     Geneva, Evangel Temple
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_23ab398fcd5f62c4ae90887011c7372e = L.marker(
+                [39.622982, -84.346609],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_03b96e6de8f70965ff395518d8b3af1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8107aeba2e20760afad4df2e4489673a = $(`<div id="html_8107aeba2e20760afad4df2e4489673a" style="width: 100.0%; height: 100.0%;">     <b>Germantown, Connection Church</b><br>     Pastor: Gabriel Ballard<br>     8350 S. Butter Street, Germantown, OH 45327<br>     Phone: 937/855-3510<br>     <b>District 18 - Chris Cramer(DO)</b>     </div>`)[0];
+                popup_03b96e6de8f70965ff395518d8b3af1b.setContent(html_8107aeba2e20760afad4df2e4489673a);
+            
+        
+
+        marker_23ab398fcd5f62c4ae90887011c7372e.bindPopup(popup_03b96e6de8f70965ff395518d8b3af1b)
+        ;
+
+        
+    
+    
+            marker_23ab398fcd5f62c4ae90887011c7372e.bindTooltip(
+                `<div>
+                     Germantown, Connection Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_918427f1336b869b668d29dc5ceac814 = L.marker(
+                [39.2629563, -84.1336669],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_47809125cccf4d3708d39361019df0d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_320541822d2d0d0170af1511eb7b59c2 = $(`<div id="html_320541822d2d0d0170af1511eb7b59c2" style="width: 100.0%; height: 100.0%;">     <b>Goshen, The Remnant Church of God</b><br>     Pastor: Preston Hummell<br>     10059 Pleasant Renner Road, Goshen, OH 45122<br>     Phone: 859/443-3836<br>     <b>nan</b>     </div>`)[0];
+                popup_47809125cccf4d3708d39361019df0d2.setContent(html_320541822d2d0d0170af1511eb7b59c2);
+            
+        
+
+        marker_918427f1336b869b668d29dc5ceac814.bindPopup(popup_47809125cccf4d3708d39361019df0d2)
+        ;
+
+        
+    
+    
+            marker_918427f1336b869b668d29dc5ceac814.bindTooltip(
+                `<div>
+                     Goshen, The Remnant Church of God
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_611e6e76570080d1e9f25ec3e87ec37d = L.marker(
+                [39.8765645, -83.098553],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_d1423663c6bb65875419474d668e24fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0b0a37f1389da021e0f07d34a941a5f = $(`<div id="html_f0b0a37f1389da021e0f07d34a941a5f" style="width: 100.0%; height: 100.0%;">     <b>Grove City, Connection Pointe Church of God</b><br>     Pastor: Randy Barr<br>     4325 Harrisburg Pike, Grove City, OH 43123<br>     Phone: 614/875-7186<br>     <b>District 16 - Randy Barr(DO)</b>     </div>`)[0];
+                popup_d1423663c6bb65875419474d668e24fc.setContent(html_f0b0a37f1389da021e0f07d34a941a5f);
+            
+        
+
+        marker_611e6e76570080d1e9f25ec3e87ec37d.bindPopup(popup_d1423663c6bb65875419474d668e24fc)
+        ;
+
+        
+    
+    
+            marker_611e6e76570080d1e9f25ec3e87ec37d.bindTooltip(
+                `<div>
+                     Grove City, Connection Pointe Church of God
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8267ebf2aa0395acd4c3588e1a82b93e = L.marker(
+                [39.405996, -84.6191696],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_30d49464399218562d0561adaabc90c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0813f46b2280b66f7622f8add2edcab = $(`<div id="html_b0813f46b2280b66f7622f8add2edcab" style="width: 100.0%; height: 100.0%;">     <b>Hamilton</b><br>     Pastor: Alan Weaver<br>     1760 Millville Avenue, Hamilton, OH 45013<br>     Phone: 513/863-5930<br>     <b>District 21 - Alan Weaver(DO)</b>     </div>`)[0];
+                popup_30d49464399218562d0561adaabc90c4.setContent(html_b0813f46b2280b66f7622f8add2edcab);
+            
+        
+
+        marker_8267ebf2aa0395acd4c3588e1a82b93e.bindPopup(popup_30d49464399218562d0561adaabc90c4)
+        ;
+
+        
+    
+    
+            marker_8267ebf2aa0395acd4c3588e1a82b93e.bindTooltip(
+                `<div>
+                     Hamilton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2d66da46920d42f8f02a63a37d7d2406 = L.marker(
+                [39.4117575, -84.5878578],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_7d2b32f7d38ef7ad79cdb00fac5b647a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad3afb0ef98a1d947f3f96b25cbd75b1 = $(`<div id="html_ad3afb0ef98a1d947f3f96b25cbd75b1" style="width: 100.0%; height: 100.0%;">     <b>Hamilton, Harvest Christian Fellowship</b><br>     Pastor: Elby L. Harrison<br>     1245 Ross Ave, Hamilton, OH 45013<br>     Phone: 513/856-8071<br>     <b>District 21 - Alan Weaver(DO)</b>     </div>`)[0];
+                popup_7d2b32f7d38ef7ad79cdb00fac5b647a.setContent(html_ad3afb0ef98a1d947f3f96b25cbd75b1);
+            
+        
+
+        marker_2d66da46920d42f8f02a63a37d7d2406.bindPopup(popup_7d2b32f7d38ef7ad79cdb00fac5b647a)
+        ;
+
+        
+    
+    
+            marker_2d66da46920d42f8f02a63a37d7d2406.bindTooltip(
+                `<div>
+                     Hamilton, Harvest Christian Fellowship
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff75c4fa96ba4234a3eb9b10b9746d34 = L.marker(
+                [39.2700358, -84.2614248],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_c717905b4f410cec2387402aa8989869 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b110137aac0def6aa20b4fc0007a8ec = $(`<div id="html_5b110137aac0def6aa20b4fc0007a8ec" style="width: 100.0%; height: 100.0%;">     <b>Hamilton, Rivers of Life</b><br>     Pastor: Kenneth Angel<br>     323 N. Riverside Drive, Hamilton, OH 45011<br>     Phone: nan<br>     <b>District 20 - Ray Phillips(DO)</b>     </div>`)[0];
+                popup_c717905b4f410cec2387402aa8989869.setContent(html_5b110137aac0def6aa20b4fc0007a8ec);
+            
+        
+
+        marker_ff75c4fa96ba4234a3eb9b10b9746d34.bindPopup(popup_c717905b4f410cec2387402aa8989869)
+        ;
+
+        
+    
+    
+            marker_ff75c4fa96ba4234a3eb9b10b9746d34.bindTooltip(
+                `<div>
+                     Hamilton, Rivers of Life
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4b0639a00834307f9893b149185cd1c5 = L.marker(
+                [39.3755877, -84.5281055],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_12a4f33aef3fbadc307d7487a3f74162 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5eea5291895659a46308f3330485968c = $(`<div id="html_5eea5291895659a46308f3330485968c" style="width: 100.0%; height: 100.0%;">     <b>Hamilton, Tylersville Worship Center</b><br>     Pastor: Keith McRoberts<br>     2753 Tylersville Road, Hamilton, OH 45015<br>     Phone: 513/863-6029<br>     <b>District 19 - Tim Oldfield(DO)</b>     </div>`)[0];
+                popup_12a4f33aef3fbadc307d7487a3f74162.setContent(html_5eea5291895659a46308f3330485968c);
+            
+        
+
+        marker_4b0639a00834307f9893b149185cd1c5.bindPopup(popup_12a4f33aef3fbadc307d7487a3f74162)
+        ;
+
+        
+    
+    
+            marker_4b0639a00834307f9893b149185cd1c5.bindTooltip(
+                `<div>
+                     Hamilton, Tylersville Worship Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_50a5b5b6cd4abd9d89d9542ba68a540e = L.marker(
+                [39.2619002, -84.7951243],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_e528efef2a8fcd0dc93ba8349950c34b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29d51bdc63567f258e85d0a1e2103fec = $(`<div id="html_29d51bdc63567f258e85d0a1e2103fec" style="width: 100.0%; height: 100.0%;">     <b>Harrison, New Haven Fam Wor Cntr</b><br>     Pastor: E. David Garrett<br>     8985 New Haven Road, Harrison, OH 45030<br>     Phone: 513/738-3800<br>     <b>District 21 - Alan Weaver(DO)</b>     </div>`)[0];
+                popup_e528efef2a8fcd0dc93ba8349950c34b.setContent(html_29d51bdc63567f258e85d0a1e2103fec);
+            
+        
+
+        marker_50a5b5b6cd4abd9d89d9542ba68a540e.bindPopup(popup_e528efef2a8fcd0dc93ba8349950c34b)
+        ;
+
+        
+    
+    
+            marker_50a5b5b6cd4abd9d89d9542ba68a540e.bindTooltip(
+                `<div>
+                     Harrison, New Haven Fam Wor Cntr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2095cb366263faf69500128ca60f4de6 = L.marker(
+                [40.041984, -83.156969],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_72c6e662d53dba6e2e2a79bb746f9b98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6c59b7aa37887a0cc6017b75a638497 = $(`<div id="html_b6c59b7aa37887a0cc6017b75a638497" style="width: 100.0%; height: 100.0%;">     <b>Hilliard, New Beginnings</b><br>     Pastor: James Skaggs<br>     4410 Avery Rd, Hilliard, OH 43026<br>     Phone: 614/529-8591<br>     <b>District 16 - Randy Barr(DO)</b>     </div>`)[0];
+                popup_72c6e662d53dba6e2e2a79bb746f9b98.setContent(html_b6c59b7aa37887a0cc6017b75a638497);
+            
+        
+
+        marker_2095cb366263faf69500128ca60f4de6.bindPopup(popup_72c6e662d53dba6e2e2a79bb746f9b98)
+        ;
+
+        
+    
+    
+            marker_2095cb366263faf69500128ca60f4de6.bindTooltip(
+                `<div>
+                     Hilliard, New Beginnings
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_796581be82a789111b7202136d4fb9bb = L.marker(
+                [39.2022866, -83.611587],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_af7897598a4fcd3188935b5767742679 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_414e6d2e86b4ed486a12069cab290ca0 = $(`<div id="html_414e6d2e86b4ed486a12069cab290ca0" style="width: 100.0%; height: 100.0%;">     <b>Hillsboro, Carpenter's House of Prayer</b><br>     Pastor: Kimble Zornes<br>     PO Box 45, Hillsboro, OH 45133<br>     Phone: 937/393-0168<br>     <b>District 25 - John Coyle(DO)</b>     </div>`)[0];
+                popup_af7897598a4fcd3188935b5767742679.setContent(html_414e6d2e86b4ed486a12069cab290ca0);
+            
+        
+
+        marker_796581be82a789111b7202136d4fb9bb.bindPopup(popup_af7897598a4fcd3188935b5767742679)
+        ;
+
+        
+    
+    
+            marker_796581be82a789111b7202136d4fb9bb.bindTooltip(
+                `<div>
+                     Hillsboro, Carpenter's House of Prayer
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ba1a3d17e5cd498572948d23b3da3e0c = L.marker(
+                [39.8466845, -84.1091152],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_b24eb136be25104321bb34fa25888db5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a0afc0d82a4221f42de5b89295ec949 = $(`<div id="html_5a0afc0d82a4221f42de5b89295ec949" style="width: 100.0%; height: 100.0%;">     <b>Huber Heights, New Beginnings</b><br>     Pastor: nan<br>     6649 Chambersburg Road, Huber Heights, OH 45424<br>     Phone: 937/236-2349<br>     <b>District 23 - Todd Martin(DO)</b>     </div>`)[0];
+                popup_b24eb136be25104321bb34fa25888db5.setContent(html_5a0afc0d82a4221f42de5b89295ec949);
+            
+        
+
+        marker_ba1a3d17e5cd498572948d23b3da3e0c.bindPopup(popup_b24eb136be25104321bb34fa25888db5)
+        ;
+
+        
+    
+    
+            marker_ba1a3d17e5cd498572948d23b3da3e0c.bindTooltip(
+                `<div>
+                     Huber Heights, New Beginnings
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8838acc6f9ea60cbc0297991687b636d = L.marker(
+                [40.1461265, -82.6767675],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_2eadc1e824f123954a2ea5b633433c4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07b30d2cb1fafaf77446795eafc2823f = $(`<div id="html_07b30d2cb1fafaf77446795eafc2823f" style="width: 100.0%; height: 100.0%;">     <b>Johnstown</b><br>     Pastor: Jerome Lawrence<br>     9081 Concord Rd, Johnstown, OH 43031<br>     Phone: 740/967-1789<br>     <b>District 17 - Mike Roehrenbeck(DO)</b>     </div>`)[0];
+                popup_2eadc1e824f123954a2ea5b633433c4d.setContent(html_07b30d2cb1fafaf77446795eafc2823f);
+            
+        
+
+        marker_8838acc6f9ea60cbc0297991687b636d.bindPopup(popup_2eadc1e824f123954a2ea5b633433c4d)
+        ;
+
+        
+    
+    
+            marker_8838acc6f9ea60cbc0297991687b636d.bindTooltip(
+                `<div>
+                     Johnstown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_94a14f994d98a5e0dc5eff32327226fb = L.marker(
+                [39.6758782, -84.1254541],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_e62c45b296f45d98ec7cca3c6d4d5353 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e7647d69c81bbbc542aa7315e76c5a1 = $(`<div id="html_0e7647d69c81bbbc542aa7315e76c5a1" style="width: 100.0%; height: 100.0%;">     <b>Kettering, Naioth Church of God</b><br>     Pastor: Alfred Mushosi<br>     4800 Bigger Road, Kettering, OH 45440<br>     Phone: 937/718-2900<br>     <b>District 22 - David Renfro(DO)</b>     </div>`)[0];
+                popup_e62c45b296f45d98ec7cca3c6d4d5353.setContent(html_0e7647d69c81bbbc542aa7315e76c5a1);
+            
+        
+
+        marker_94a14f994d98a5e0dc5eff32327226fb.bindPopup(popup_e62c45b296f45d98ec7cca3c6d4d5353)
+        ;
+
+        
+    
+    
+            marker_94a14f994d98a5e0dc5eff32327226fb.bindTooltip(
+                `<div>
+                     Kettering, Naioth Church of God
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e97c1dd1f2070adb2f8dc948117f6837 = L.marker(
+                [39.6758782, -84.1254541],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_e36da8c5857927a41116d5d14fb669b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82ee733fb5037c4739d02136be5c8aea = $(`<div id="html_82ee733fb5037c4739d02136be5c8aea" style="width: 100.0%; height: 100.0%;">     <b>Kettering, Oak Creek</b><br>     Pastor: Brian Gibboney<br>     4800 Bigger Road, Kettering, OH 45440<br>     Phone: 937/435-2942<br>     <b>District 22 - David Renfro(DO)</b>     </div>`)[0];
+                popup_e36da8c5857927a41116d5d14fb669b6.setContent(html_82ee733fb5037c4739d02136be5c8aea);
+            
+        
+
+        marker_e97c1dd1f2070adb2f8dc948117f6837.bindPopup(popup_e36da8c5857927a41116d5d14fb669b6)
+        ;
+
+        
+    
+    
+            marker_e97c1dd1f2070adb2f8dc948117f6837.bindTooltip(
+                `<div>
+                     Kettering, Oak Creek
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bbc49b99b6bcdd4b53b155550cda548e = L.marker(
+                [39.7265539, -84.124713],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_a91193ae89372d31ea7735bc840a3fc6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de0113c1022f35d458c6cdfc5e91b843 = $(`<div id="html_de0113c1022f35d458c6cdfc5e91b843" style="width: 100.0%; height: 100.0%;">     <b>Kettering, Shepherd's Fold</b><br>     Pastor: Harold Allen<br>     1521 Bauer Avenue, Kettering, OH 45420<br>     Phone: 937/253-2401<br>     <b>District 22 - David Renfro(DO)</b>     </div>`)[0];
+                popup_a91193ae89372d31ea7735bc840a3fc6.setContent(html_de0113c1022f35d458c6cdfc5e91b843);
+            
+        
+
+        marker_bbc49b99b6bcdd4b53b155550cda548e.bindPopup(popup_a91193ae89372d31ea7735bc840a3fc6)
+        ;
+
+        
+    
+    
+            marker_bbc49b99b6bcdd4b53b155550cda548e.bindTooltip(
+                `<div>
+                     Kettering, Shepherd's Fold
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_593290aa38b52b3d894b57b1cade0324 = L.marker(
+                [39.7380326, -82.5887012],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_b97cd1fe2401e3c8069fdbcac1623e11 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7efdc4231ecbc2e103e74defac9ba575 = $(`<div id="html_7efdc4231ecbc2e103e74defac9ba575" style="width: 100.0%; height: 100.0%;">     <b>Lancaster, The Gathering Church of God</b><br>     Pastor: Micah McCoy<br>     1531 Granville Pike, Lancaster, OH 43130<br>     Phone: nan<br>     <b>District 16 - Randy Barr(DO)</b>     </div>`)[0];
+                popup_b97cd1fe2401e3c8069fdbcac1623e11.setContent(html_7efdc4231ecbc2e103e74defac9ba575);
+            
+        
+
+        marker_593290aa38b52b3d894b57b1cade0324.bindPopup(popup_b97cd1fe2401e3c8069fdbcac1623e11)
+        ;
+
+        
+    
+    
+            marker_593290aa38b52b3d894b57b1cade0324.bindTooltip(
+                `<div>
+                     Lancaster, The Gathering Church of God
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f266faefc7f1586f110fbd3379c20a5f = L.marker(
+                [39.4500816, -84.1842991],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_7780f12e7493b1e356cd9933728eeb3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e63cde647d9feba3a88c82261b6f55a9 = $(`<div id="html_e63cde647d9feba3a88c82261b6f55a9" style="width: 100.0%; height: 100.0%;">     <b>Lebanon, City Gate Church</b><br>     Pastor: Eric Petree<br>     1004 Columbus Avenue, Lebanon, OH 45036<br>     Phone: nan<br>     <b>District 19 - Tim Oldfield(DO)</b>     </div>`)[0];
+                popup_7780f12e7493b1e356cd9933728eeb3d.setContent(html_e63cde647d9feba3a88c82261b6f55a9);
+            
+        
+
+        marker_f266faefc7f1586f110fbd3379c20a5f.bindPopup(popup_7780f12e7493b1e356cd9933728eeb3d)
+        ;
+
+        
+    
+    
+            marker_f266faefc7f1586f110fbd3379c20a5f.bindTooltip(
+                `<div>
+                     Lebanon, City Gate Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ce22064066ad7bcbfecbf352c43872cc = L.marker(
+                [41.8118683, -81.0486513],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_d361945e98abe404a8ced075f6a0269d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d7e49c822b947cbebde5874fcb9a37a = $(`<div id="html_0d7e49c822b947cbebde5874fcb9a37a" style="width: 100.0%; height: 100.0%;">     <b>Madison, Lake Erie</b><br>     Pastor: Bill Isaacs<br>     2300 Hubbard Road, Madison, OH 44057<br>     Phone: 440/938-4140<br>     <b>District 08 - Bill Isaacs(DO)</b>     </div>`)[0];
+                popup_d361945e98abe404a8ced075f6a0269d.setContent(html_0d7e49c822b947cbebde5874fcb9a37a);
+            
+        
+
+        marker_ce22064066ad7bcbfecbf352c43872cc.bindPopup(popup_d361945e98abe404a8ced075f6a0269d)
+        ;
+
+        
+    
+    
+            marker_ce22064066ad7bcbfecbf352c43872cc.bindTooltip(
+                `<div>
+                     Madison, Lake Erie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2115fc7805204e06250990fa22124f1b = L.marker(
+                [39.425398, -81.436355],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_3019d4ec7eb6d41ed47099c36ad9a6e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5fc81d59452f4d838490dd8b9ac1a403 = $(`<div id="html_5fc81d59452f4d838490dd8b9ac1a403" style="width: 100.0%; height: 100.0%;">     <b>Marietta</b><br>     Pastor: Daniel L. Hess<br>     501 Colegate Drive, Marietta, OH 45750<br>     Phone: 740/373-4219<br>     <b>District 15 - Francis Burkhart(DO)</b>     </div>`)[0];
+                popup_3019d4ec7eb6d41ed47099c36ad9a6e2.setContent(html_5fc81d59452f4d838490dd8b9ac1a403);
+            
+        
+
+        marker_2115fc7805204e06250990fa22124f1b.bindPopup(popup_3019d4ec7eb6d41ed47099c36ad9a6e2)
+        ;
+
+        
+    
+    
+            marker_2115fc7805204e06250990fa22124f1b.bindTooltip(
+                `<div>
+                     Marietta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca3493efef946a2950fcc23cfe7350da = L.marker(
+                [40.6001028, -83.0980899],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_32777fafe0eb8fcee9daadb4bcc5f7b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70ac140e07eb9175cd8798112873cf92 = $(`<div id="html_70ac140e07eb9175cd8798112873cf92" style="width: 100.0%; height: 100.0%;">     <b>Marion, Victory Center</b><br>     Pastor: Patrick Demuth<br>     1190 E. Fairground St., Marion, OH 43302<br>     Phone: 740/387-5722<br>     <b>District 11 - Patrick Demuth(DO)</b>     </div>`)[0];
+                popup_32777fafe0eb8fcee9daadb4bcc5f7b2.setContent(html_70ac140e07eb9175cd8798112873cf92);
+            
+        
+
+        marker_ca3493efef946a2950fcc23cfe7350da.bindPopup(popup_32777fafe0eb8fcee9daadb4bcc5f7b2)
+        ;
+
+        
+    
+    
+            marker_ca3493efef946a2950fcc23cfe7350da.bindTooltip(
+                `<div>
+                     Marion, Victory Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_57088ea0daacb0c81258eae421429261 = L.marker(
+                [40.7884087, -81.5107611],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_07f0c50e694d69c121f2ab73e63fe77e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc4c0a991b215cdab6b53c76a4517d2a = $(`<div id="html_bc4c0a991b215cdab6b53c76a4517d2a" style="width: 100.0%; height: 100.0%;">     <b>Massillon, Link Church</b><br>     Pastor: Steve Cooper<br>     1128 Walnut Rd. SE, Massillon, OH 44648<br>     Phone: 330/833-1200<br>     <b>District 09 - Webb Parsons(DO)</b>     </div>`)[0];
+                popup_07f0c50e694d69c121f2ab73e63fe77e.setContent(html_bc4c0a991b215cdab6b53c76a4517d2a);
+            
+        
+
+        marker_57088ea0daacb0c81258eae421429261.bindPopup(popup_07f0c50e694d69c121f2ab73e63fe77e)
+        ;
+
+        
+    
+    
+            marker_57088ea0daacb0c81258eae421429261.bindTooltip(
+                `<div>
+                     Massillon, Link Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e216ddb7c2bc9b305193c4e44a193856 = L.marker(
+                [41.6474892, -81.3534075],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_02af5a1a5c8241efb922041c0527f632 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1bc0ace67ac8dd9425572dedb0f4087 = $(`<div id="html_d1bc0ace67ac8dd9425572dedb0f4087" style="width: 100.0%; height: 100.0%;">     <b>Mentor, Christian L.I.F.E.</b><br>     Pastor: Bob Meredith<br>     8250 Garfield Rd, Mentor, OH 44060<br>     Phone: 440/255-0739<br>     <b>District 08 - Bill Isaacs(DO)</b>     </div>`)[0];
+                popup_02af5a1a5c8241efb922041c0527f632.setContent(html_d1bc0ace67ac8dd9425572dedb0f4087);
+            
+        
+
+        marker_e216ddb7c2bc9b305193c4e44a193856.bindPopup(popup_02af5a1a5c8241efb922041c0527f632)
+        ;
+
+        
+    
+    
+            marker_e216ddb7c2bc9b305193c4e44a193856.bindTooltip(
+                `<div>
+                     Mentor, Christian L.I.F.E.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d11c8ea57666577331efdb6d023dd34 = L.marker(
+                [41.7199964, -81.2969796],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_08077a671c3c194549dc5adf538623d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_104b931bcde4b5d0c32db55e366b624f = $(`<div id="html_104b931bcde4b5d0c32db55e366b624f" style="width: 100.0%; height: 100.0%;">     <b>Mentor, East Heisley</b><br>     Pastor: Hank Williams<br>     5544 E Heisley Rd, Mentor, OH 44060<br>     Phone: 440/354-8369<br>     <b>District 08 - Bill Isaacs(DO)</b>     </div>`)[0];
+                popup_08077a671c3c194549dc5adf538623d0.setContent(html_104b931bcde4b5d0c32db55e366b624f);
+            
+        
+
+        marker_1d11c8ea57666577331efdb6d023dd34.bindPopup(popup_08077a671c3c194549dc5adf538623d0)
+        ;
+
+        
+    
+    
+            marker_1d11c8ea57666577331efdb6d023dd34.bindTooltip(
+                `<div>
+                     Mentor, East Heisley
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_125b4e683f193d36be6038296f1105cd = L.marker(
+                [39.6388057, -84.2542177],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_40d402953545ff4be5c6e10648cfa481 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_588cdd3e869c0167d6253eccf93eba3e = $(`<div id="html_588cdd3e869c0167d6253eccf93eba3e" style="width: 100.0%; height: 100.0%;">     <b>Miamisburg, Rejoicing Life</b><br>     Pastor: Heath Houston<br>     54 S. Gebhart-Church Road, Miamisburg, OH 45342<br>     Phone: 937/866-1321<br>     <b>District 18 - Chris Cramer(DO)</b>     </div>`)[0];
+                popup_40d402953545ff4be5c6e10648cfa481.setContent(html_588cdd3e869c0167d6253eccf93eba3e);
+            
+        
+
+        marker_125b4e683f193d36be6038296f1105cd.bindPopup(popup_40d402953545ff4be5c6e10648cfa481)
+        ;
+
+        
+    
+    
+            marker_125b4e683f193d36be6038296f1105cd.bindTooltip(
+                `<div>
+                     Miamisburg, Rejoicing Life
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f95d4b6e3335daf24dfd555bd44371c7 = L.marker(
+                [39.5288406, -84.3506072],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_24196a578d7803084ebed32325262361 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0af17ea486fb54183a1d443188246f0 = $(`<div id="html_d0af17ea486fb54183a1d443188246f0" style="width: 100.0%; height: 100.0%;">     <b>Middletown, Stratford Heights</b><br>     Pastor: Raymond Phillips<br>     4419 Nelson Road, Middletown, OH 45042<br>     Phone: 513/423-0797<br>     <b>District 20 - Ray Phillips(DO)</b>     </div>`)[0];
+                popup_24196a578d7803084ebed32325262361.setContent(html_d0af17ea486fb54183a1d443188246f0);
+            
+        
+
+        marker_f95d4b6e3335daf24dfd555bd44371c7.bindPopup(popup_24196a578d7803084ebed32325262361)
+        ;
+
+        
+    
+    
+            marker_f95d4b6e3335daf24dfd555bd44371c7.bindTooltip(
+                `<div>
+                     Middletown, Stratford Heights
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8ac39217a42df3705ea33edf558f816c = L.marker(
+                [39.5062005, -84.3807955],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_83bebbda7411c9977f732abe9903b8ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec8600e7931a4a3b323a22f52e00dbb9 = $(`<div id="html_ec8600e7931a4a3b323a22f52e00dbb9" style="width: 100.0%; height: 100.0%;">     <b>Monroe, Hope City Church</b><br>     Pastor: nan<br>     2601 El Paso Ave, Middletown, OH 45044<br>     Phone: nan<br>     <b>District 18 - Chris Cramer(DO)</b>     </div>`)[0];
+                popup_83bebbda7411c9977f732abe9903b8ed.setContent(html_ec8600e7931a4a3b323a22f52e00dbb9);
+            
+        
+
+        marker_8ac39217a42df3705ea33edf558f816c.bindPopup(popup_83bebbda7411c9977f732abe9903b8ed)
+        ;
+
+        
+    
+    
+            marker_8ac39217a42df3705ea33edf558f816c.bindTooltip(
+                `<div>
+                     Monroe, Hope City Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a8df31f5c14ba17e36c217fbd77bac0d = L.marker(
+                [40.0586058, -82.4416855],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_958966a33c0643d539ff0d1ddd09b8af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_129e25f6f4e3ac71149c414a43deeea6 = $(`<div id="html_129e25f6f4e3ac71149c414a43deeea6" style="width: 100.0%; height: 100.0%;">     <b>Newark Heights</b><br>     Pastor: Kenneth Dean<br>     1092 W Church St, Newark, OH 43055<br>     Phone: 740/344-8897<br>     <b>District 16 - Randy Barr(DO)</b>     </div>`)[0];
+                popup_958966a33c0643d539ff0d1ddd09b8af.setContent(html_129e25f6f4e3ac71149c414a43deeea6);
+            
+        
+
+        marker_a8df31f5c14ba17e36c217fbd77bac0d.bindPopup(popup_958966a33c0643d539ff0d1ddd09b8af)
+        ;
+
+        
+    
+    
+            marker_a8df31f5c14ba17e36c217fbd77bac0d.bindTooltip(
+                `<div>
+                     Newark Heights
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_516fc1bd1946339f4e8978e33d84d314 = L.marker(
+                [40.2734115, -81.6092605],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_ddb382ec9cf26c7c6f39328aff7c994d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03f54aa5149f2e6d8fa35570074f5d01 = $(`<div id="html_03f54aa5149f2e6d8fa35570074f5d01" style="width: 100.0%; height: 100.0%;">     <b>Newcomerstown, New Beginnings Church of God</b><br>     Pastor: Queen Williams<br>     309 W Church St, Newcomerstown, OH 43832<br>     Phone: 740/492-1061<br>     <b>District 14 - John Stevenson(DO)</b>     </div>`)[0];
+                popup_ddb382ec9cf26c7c6f39328aff7c994d.setContent(html_03f54aa5149f2e6d8fa35570074f5d01);
+            
+        
+
+        marker_516fc1bd1946339f4e8978e33d84d314.bindPopup(popup_ddb382ec9cf26c7c6f39328aff7c994d)
+        ;
+
+        
+    
+    
+            marker_516fc1bd1946339f4e8978e33d84d314.bindTooltip(
+                `<div>
+                     Newcomerstown, New Beginnings Church of God
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e988b7bbb9df41d2f4578230fcfb96bf = L.marker(
+                [41.172741, -80.7763693],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_248bcf43cad1b3fa5f7fe47bd9732471 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d61eada579d19e69be7fe39aa3d01fa = $(`<div id="html_6d61eada579d19e69be7fe39aa3d01fa" style="width: 100.0%; height: 100.0%;">     <b>Niles, Praise Cathedral</b><br>     Pastor: Dewey J. Salyers<br>     608 Iowa Ave., Niles, OH 44446<br>     Phone: 330/647-0928<br>     <b>District 07 - Rodney Mullins(DO)</b>     </div>`)[0];
+                popup_248bcf43cad1b3fa5f7fe47bd9732471.setContent(html_6d61eada579d19e69be7fe39aa3d01fa);
+            
+        
+
+        marker_e988b7bbb9df41d2f4578230fcfb96bf.bindPopup(popup_248bcf43cad1b3fa5f7fe47bd9732471)
+        ;
+
+        
+    
+    
+            marker_e988b7bbb9df41d2f4578230fcfb96bf.bindTooltip(
+                `<div>
+                     Niles, Praise Cathedral
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_95d5f94f3650af7cc0d78f563f99e2e2 = L.marker(
+                [41.4030713, -81.9894442],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_caca93b5132801485b9dbbdff846f064 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7778c99c2e2b0811e0f77c7b9b65a176 = $(`<div id="html_7778c99c2e2b0811e0f77c7b9b65a176" style="width: 100.0%; height: 100.0%;">     <b>North Ridgeville, The River</b><br>     Pastor: Justin Reed<br>     6000 Lear Nagle Rd, North Ridgeville, OH 44039<br>     Phone: 440/327-4761<br>     <b>District 05 - Chad Britt(DO)</b>     </div>`)[0];
+                popup_caca93b5132801485b9dbbdff846f064.setContent(html_7778c99c2e2b0811e0f77c7b9b65a176);
+            
+        
+
+        marker_95d5f94f3650af7cc0d78f563f99e2e2.bindPopup(popup_caca93b5132801485b9dbbdff846f064)
+        ;
+
+        
+    
+    
+            marker_95d5f94f3650af7cc0d78f563f99e2e2.bindTooltip(
+                `<div>
+                     North Ridgeville, The River
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e514675651e981de4c5865eb44d325d6 = L.marker(
+                [41.2443174, -82.6116483],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_859228d7516d384379a1b691874532d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b95b08d5b9bbde097c179fee310ae57 = $(`<div id="html_1b95b08d5b9bbde097c179fee310ae57" style="width: 100.0%; height: 100.0%;">     <b>Norwalk, Maple City</b><br>     Pastor: Kenny Conley<br>     79 E. Main Street, Norwalk, OH 44857<br>     Phone: 419/668-5984<br>     <b>District 03 - Greg Griffith(DO)</b>     </div>`)[0];
+                popup_859228d7516d384379a1b691874532d6.setContent(html_1b95b08d5b9bbde097c179fee310ae57);
+            
+        
+
+        marker_e514675651e981de4c5865eb44d325d6.bindPopup(popup_859228d7516d384379a1b691874532d6)
+        ;
+
+        
+    
+    
+            marker_e514675651e981de4c5865eb44d325d6.bindTooltip(
+                `<div>
+                     Norwalk, Maple City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bf8db39631292e364cad172ad55797e5 = L.marker(
+                [39.4987054, -84.4739374],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_883353c4922adda7da5643fffb9c890d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_072d4a64b162078c539cffc696e77be2 = $(`<div id="html_072d4a64b162078c539cffc696e77be2" style="width: 100.0%; height: 100.0%;">     <b>Oxford, Ambassadors' Pointe Community Church</b><br>     Pastor: Rodney White<br>     849 Ginger Ridge Drive, Trenton, OH 45067<br>     Phone: 513/523-6136<br>     <b>District 20 - Ray Phillips(DO)</b>     </div>`)[0];
+                popup_883353c4922adda7da5643fffb9c890d.setContent(html_072d4a64b162078c539cffc696e77be2);
+            
+        
+
+        marker_bf8db39631292e364cad172ad55797e5.bindPopup(popup_883353c4922adda7da5643fffb9c890d)
+        ;
+
+        
+    
+    
+            marker_bf8db39631292e364cad172ad55797e5.bindTooltip(
+                `<div>
+                     Oxford, Ambassadors' Pointe Community Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c22acb44d3a94cd541d91bdcc687c178 = L.marker(
+                [41.395006, -81.769182],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_34fa1e8d7ea8b90502e26bd6c3e472a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ef4e8e96b2423309cf7fa479302ead4 = $(`<div id="html_1ef4e8e96b2423309cf7fa479302ead4" style="width: 100.0%; height: 100.0%;">     <b>Parma, Parma Park</b><br>     Pastor: D. Scott Skeens<br>     12000 Huffman Rd., Parma, OH 44130<br>     Phone: 440/884-7900<br>     <b>District 06 - Brian Palmer(DO)</b>     </div>`)[0];
+                popup_34fa1e8d7ea8b90502e26bd6c3e472a0.setContent(html_1ef4e8e96b2423309cf7fa479302ead4);
+            
+        
+
+        marker_c22acb44d3a94cd541d91bdcc687c178.bindPopup(popup_34fa1e8d7ea8b90502e26bd6c3e472a0)
+        ;
+
+        
+    
+    
+            marker_c22acb44d3a94cd541d91bdcc687c178.bindTooltip(
+                `<div>
+                     Parma, Parma Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_693f3acc223671707bc1135c2093aa51 = L.marker(
+                [40.991659, -82.658689],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_3d5d71c58eae7c76cdcaaff9169ff55e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc7348195bcd8ab1a928757f6c9ea44e = $(`<div id="html_bc7348195bcd8ab1a928757f6c9ea44e" style="width: 100.0%; height: 100.0%;">     <b>Plymouth</b><br>     Pastor: Benjamin Gregg<br>     206 Trux St, Plymouth, OH 44865<br>     Phone: 567/224-5831<br>     <b>District 03 - Greg Griffith(DO)</b>     </div>`)[0];
+                popup_3d5d71c58eae7c76cdcaaff9169ff55e.setContent(html_bc7348195bcd8ab1a928757f6c9ea44e);
+            
+        
+
+        marker_693f3acc223671707bc1135c2093aa51.bindPopup(popup_3d5d71c58eae7c76cdcaaff9169ff55e)
+        ;
+
+        
+    
+    
+            marker_693f3acc223671707bc1135c2093aa51.bindTooltip(
+                `<div>
+                     Plymouth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c4e6a86c6e15839b7d5fb72196f7813f = L.marker(
+                [38.7637246, -82.9356085],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_2d015fa2e2160d124da300793e81af09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b89565114fd00dfa618558abefbadc06 = $(`<div id="html_b89565114fd00dfa618558abefbadc06" style="width: 100.0%; height: 100.0%;">     <b>Portsmouth, High Praises</b><br>     Pastor: Dean Thompson Sr.<br>     1712 Harrisonville Avenue, Portsmouth, OH 45662<br>     Phone: 740/876-4112<br>     <b>District 27 - Dean Thompson(DO)</b>     </div>`)[0];
+                popup_2d015fa2e2160d124da300793e81af09.setContent(html_b89565114fd00dfa618558abefbadc06);
+            
+        
+
+        marker_c4e6a86c6e15839b7d5fb72196f7813f.bindPopup(popup_2d015fa2e2160d124da300793e81af09)
+        ;
+
+        
+    
+    
+            marker_c4e6a86c6e15839b7d5fb72196f7813f.bindTooltip(
+                `<div>
+                     Portsmouth, High Praises
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8b066cd039fc64f1d3faa3d74d074f0b = L.marker(
+                [39.2034178, -82.8137114],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_07911bd2fd6cb38584717fb3c999b8b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ced2d1a7c59fd6b72b8f8cf87c818a5b = $(`<div id="html_ced2d1a7c59fd6b72b8f8cf87c818a5b" style="width: 100.0%; height: 100.0%;">     <b>Richmond Dale</b><br>     Pastor: John Evans<br>     345 Market Street, Richmond Dale, OH 45673<br>     Phone: 740/884-4147<br>     <b>District 26 - John Hocker(DO)</b>     </div>`)[0];
+                popup_07911bd2fd6cb38584717fb3c999b8b2.setContent(html_ced2d1a7c59fd6b72b8f8cf87c818a5b);
+            
+        
+
+        marker_8b066cd039fc64f1d3faa3d74d074f0b.bindPopup(popup_07911bd2fd6cb38584717fb3c999b8b2)
+        ;
+
+        
+    
+    
+            marker_8b066cd039fc64f1d3faa3d74d074f0b.bindTooltip(
+                `<div>
+                     Richmond Dale
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_21bc70c826c3d158f0d0be1bd36a9ba2 = L.marker(
+                [40.9650113, -81.7814829],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_4096f95a4c2d1c299a351ed6282d6ca3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b3149aef97e2b9e201303519e5631a1 = $(`<div id="html_8b3149aef97e2b9e201303519e5631a1" style="width: 100.0%; height: 100.0%;">     <b>Rittman</b><br>     Pastor: Jeffrey Ball<br>     261 S Main St, Rittman, OH 44270<br>     Phone: 330/927-4426<br>     <b>District 09 - Webb Parsons(DO)</b>     </div>`)[0];
+                popup_4096f95a4c2d1c299a351ed6282d6ca3.setContent(html_8b3149aef97e2b9e201303519e5631a1);
+            
+        
+
+        marker_21bc70c826c3d158f0d0be1bd36a9ba2.bindPopup(popup_4096f95a4c2d1c299a351ed6282d6ca3)
+        ;
+
+        
+    
+    
+            marker_21bc70c826c3d158f0d0be1bd36a9ba2.bindTooltip(
+                `<div>
+                     Rittman
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb75ae6e534ad2a7acc7be45d86b0d52 = L.marker(
+                [40.9160714, -81.0506811],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_137e87e6e5a953470b3bb711dcc1a627 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b44e65b4809fff8a04b76c62ddda49ba = $(`<div id="html_b44e65b4809fff8a04b76c62ddda49ba" style="width: 100.0%; height: 100.0%;">     <b>Sebring, New Hope</b><br>     Pastor: Brandon Wilbur<br>     20990 Oak St, Alliance, OH 44601<br>     Phone: 330/823-2151<br>     <b>District 13 - Francis Burkhart(DO)</b>     </div>`)[0];
+                popup_137e87e6e5a953470b3bb711dcc1a627.setContent(html_b44e65b4809fff8a04b76c62ddda49ba);
+            
+        
+
+        marker_fb75ae6e534ad2a7acc7be45d86b0d52.bindPopup(popup_137e87e6e5a953470b3bb711dcc1a627)
+        ;
+
+        
+    
+    
+            marker_fb75ae6e534ad2a7acc7be45d86b0d52.bindTooltip(
+                `<div>
+                     Sebring, New Hope
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8efdccfb492357303e617397288376d8 = L.marker(
+                [41.4619979, -82.0763394],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_c3633c745760d67eba4af871cb84c78e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fd99adfba2d95cf482798c8127fee2a = $(`<div id="html_7fd99adfba2d95cf482798c8127fee2a" style="width: 100.0%; height: 100.0%;">     <b>Sheffield</b><br>     Pastor: Nathan Harvey<br>     2280 N. Abbe Rd., Sheffield, OH 44054<br>     Phone: 440/934-6992<br>     <b>District 05 - Chad Britt(DO)</b>     </div>`)[0];
+                popup_c3633c745760d67eba4af871cb84c78e.setContent(html_7fd99adfba2d95cf482798c8127fee2a);
+            
+        
+
+        marker_8efdccfb492357303e617397288376d8.bindPopup(popup_c3633c745760d67eba4af871cb84c78e)
+        ;
+
+        
+    
+    
+            marker_8efdccfb492357303e617397288376d8.bindTooltip(
+                `<div>
+                     Sheffield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a5f45e1e8722046486ea848ce9b2dd60 = L.marker(
+                [40.9085715, -82.6562749],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_040b497d641e63883deec5aed85c57c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f92a0b0afbc160baf7f60305062dae72 = $(`<div id="html_f92a0b0afbc160baf7f60305062dae72" style="width: 100.0%; height: 100.0%;">     <b>Shelby, Connect Church</b><br>     Pastor: Rick Lewis<br>     4062 London W Rd., Shelby, OH 44875<br>     Phone: 419/342-5391<br>     <b>District 11 - Patrick Demuth(DO)</b>     </div>`)[0];
+                popup_040b497d641e63883deec5aed85c57c6.setContent(html_f92a0b0afbc160baf7f60305062dae72);
+            
+        
+
+        marker_a5f45e1e8722046486ea848ce9b2dd60.bindPopup(popup_040b497d641e63883deec5aed85c57c6)
+        ;
+
+        
+    
+    
+            marker_a5f45e1e8722046486ea848ce9b2dd60.bindTooltip(
+                `<div>
+                     Shelby, Connect Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ada4eeef172af81ed6ed5a000b84cd35 = L.marker(
+                [40.2883184, -84.1690184],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_57eb968863f154f2521c181f29f25a2c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7ef931af715d575b5b9b004b5d9cf22 = $(`<div id="html_f7ef931af715d575b5b9b004b5d9cf22" style="width: 100.0%; height: 100.0%;">     <b>Sidney</b><br>     Pastor: Shane Jackson<br>     321 N. Wagner Ave, Sidney, OH 45365<br>     Phone: 937/710-4601<br>     <b>District 24 - Sam Shilot(DO)</b>     </div>`)[0];
+                popup_57eb968863f154f2521c181f29f25a2c.setContent(html_f7ef931af715d575b5b9b004b5d9cf22);
+            
+        
+
+        marker_ada4eeef172af81ed6ed5a000b84cd35.bindPopup(popup_57eb968863f154f2521c181f29f25a2c)
+        ;
+
+        
+    
+    
+            marker_ada4eeef172af81ed6ed5a000b84cd35.bindTooltip(
+                `<div>
+                     Sidney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_15ddc530b7c701ed60580513e0631cd0 = L.marker(
+                [38.427549, -82.563334],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_472f60abc6754c9df7452798a0004036 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3dc2d496dd8dcf9b34b9b370b2793b7 = $(`<div id="html_d3dc2d496dd8dcf9b34b9b370b2793b7" style="width: 100.0%; height: 100.0%;">     <b>South Point, Tri-State Worship Center</b><br>     Pastor: Terry Wagner<br>     901 Solida Road, South Point, OH 45680<br>     Phone: 740/894-1742<br>     <b>District 27 - Dean Thompson(DO)</b>     </div>`)[0];
+                popup_472f60abc6754c9df7452798a0004036.setContent(html_d3dc2d496dd8dcf9b34b9b370b2793b7);
+            
+        
+
+        marker_15ddc530b7c701ed60580513e0631cd0.bindPopup(popup_472f60abc6754c9df7452798a0004036)
+        ;
+
+        
+    
+    
+            marker_15ddc530b7c701ed60580513e0631cd0.bindTooltip(
+                `<div>
+                     South Point, Tri-State Worship Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad03f8312fa46ed0db07d9ff4632eb3e = L.marker(
+                [41.6175461, -83.5228353],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_32e5124e94f99a6e8c0a405874d15125 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_392513508d2319ab7c9ce82c9f9c8f15 = $(`<div id="html_392513508d2319ab7c9ce82c9f9c8f15" style="width: 100.0%; height: 100.0%;">     <b>Toledo, Harvest Tabernacle Christian Life Center</b><br>     Pastor: Jeff Forsyth<br>     430 E Florence Ave, Toledo, OH 43605<br>     Phone: 419/693-1909<br>     <b>District 01 - Daniel Lucien(DO)</b>     </div>`)[0];
+                popup_32e5124e94f99a6e8c0a405874d15125.setContent(html_392513508d2319ab7c9ce82c9f9c8f15);
+            
+        
+
+        marker_ad03f8312fa46ed0db07d9ff4632eb3e.bindPopup(popup_32e5124e94f99a6e8c0a405874d15125)
+        ;
+
+        
+    
+    
+            marker_ad03f8312fa46ed0db07d9ff4632eb3e.bindTooltip(
+                `<div>
+                     Toledo, Harvest Tabernacle Christian Life Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f4993c08515ae6c2b82fbecceaf7b58b = L.marker(
+                [39.481323, -84.4475132],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_44c65609f714171e032f95efcb0ade43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_955cfefd1b10863dcb0a3a571408d897 = $(`<div id="html_955cfefd1b10863dcb0a3a571408d897" style="width: 100.0%; height: 100.0%;">     <b>Trenton, World Harvest</b><br>     Pastor: Danny Murphy<br>     602 E. State Street, Trenton, OH 45067<br>     Phone: 513/988-0177<br>     <b>District 20 - Ray Phillips(DO)</b>     </div>`)[0];
+                popup_44c65609f714171e032f95efcb0ade43.setContent(html_955cfefd1b10863dcb0a3a571408d897);
+            
+        
+
+        marker_f4993c08515ae6c2b82fbecceaf7b58b.bindPopup(popup_44c65609f714171e032f95efcb0ade43)
+        ;
+
+        
+    
+    
+            marker_f4993c08515ae6c2b82fbecceaf7b58b.bindTooltip(
+                `<div>
+                     Trenton, World Harvest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1314a29883ba8962189dfc5e018e9768 = L.marker(
+                [40.3945137, -81.3457716],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_4223713207ba1be3ea6fafe13a52ea7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c72417c0012f9570168d4899d6c92889 = $(`<div id="html_c72417c0012f9570168d4899d6c92889" style="width: 100.0%; height: 100.0%;">     <b>Uhrichsville, Bethel Worship Center</b><br>     Pastor: John Stevenson<br>     634 N Main St, Uhrichsville, OH 44683<br>     Phone: 740/922-9848<br>     <b>District 14 - John Stevenson(DO)</b>     </div>`)[0];
+                popup_4223713207ba1be3ea6fafe13a52ea7f.setContent(html_c72417c0012f9570168d4899d6c92889);
+            
+        
+
+        marker_1314a29883ba8962189dfc5e018e9768.bindPopup(popup_4223713207ba1be3ea6fafe13a52ea7f)
+        ;
+
+        
+    
+    
+            marker_1314a29883ba8962189dfc5e018e9768.bindTooltip(
+                `<div>
+                     Uhrichsville, Bethel Worship Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9ef8ad1b3c98fee4d30b5a551624f91a = L.marker(
+                [40.8273607, -83.2830599],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_7ed5ce08dd95f7c7886395938ef67cb2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0818b6e0dda09ab71d970de355bf733 = $(`<div id="html_a0818b6e0dda09ab71d970de355bf733" style="width: 100.0%; height: 100.0%;">     <b>Upper Sandusky, Liberty Church of God</b><br>     Pastor: Scott Moore<br>     102 S. 7th Street, Upper Sandusky, OH 43351<br>     Phone: 419/310-5165<br>     <b>District 11 - Patrick Demuth(DO)</b>     </div>`)[0];
+                popup_7ed5ce08dd95f7c7886395938ef67cb2.setContent(html_a0818b6e0dda09ab71d970de355bf733);
+            
+        
+
+        marker_9ef8ad1b3c98fee4d30b5a551624f91a.bindPopup(popup_7ed5ce08dd95f7c7886395938ef67cb2)
+        ;
+
+        
+    
+    
+            marker_9ef8ad1b3c98fee4d30b5a551624f91a.bindTooltip(
+                `<div>
+                     Upper Sandusky, Liberty Church of God
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89ab325cdf87917f7e3e8d34c097184e = L.marker(
+                [41.2377123, -81.8818368],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_0cac95c70bff088a8552abebcef9c0da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10d2dc6b976a5ceb80a20e72fe3e04c6 = $(`<div id="html_10d2dc6b976a5ceb80a20e72fe3e04c6" style="width: 100.0%; height: 100.0%;">     <b>Valley City, River Life</b><br>     Pastor: Justin Reed<br>     5404 Center Rd., Valley City, OH 44280<br>     Phone: 216/469-4832<br>     <b>District 05 - Chad Britt(DO)</b>     </div>`)[0];
+                popup_0cac95c70bff088a8552abebcef9c0da.setContent(html_10d2dc6b976a5ceb80a20e72fe3e04c6);
+            
+        
+
+        marker_89ab325cdf87917f7e3e8d34c097184e.bindPopup(popup_0cac95c70bff088a8552abebcef9c0da)
+        ;
+
+        
+    
+    
+            marker_89ab325cdf87917f7e3e8d34c097184e.bindTooltip(
+                `<div>
+                     Valley City, River Life
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_250c0bfcfa77368204c827414bb4558c = L.marker(
+                [39.3554371, -84.1342203],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_f713a2e1ad8ed59bfa2cda1b100f9d8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ffc6d3b890adc8ee02abff267228590 = $(`<div id="html_9ffc6d3b890adc8ee02abff267228590" style="width: 100.0%; height: 100.0%;">     <b>Warren, Champion</b><br>     Pastor: Dennie Land<br>     590 Center St, Warren, OH 44481<br>     Phone: 330/469-6362<br>     <b>District 07 - Rodney Mullins(DO)</b>     </div>`)[0];
+                popup_f713a2e1ad8ed59bfa2cda1b100f9d8c.setContent(html_9ffc6d3b890adc8ee02abff267228590);
+            
+        
+
+        marker_250c0bfcfa77368204c827414bb4558c.bindPopup(popup_f713a2e1ad8ed59bfa2cda1b100f9d8c)
+        ;
+
+        
+    
+    
+            marker_250c0bfcfa77368204c827414bb4558c.bindTooltip(
+                `<div>
+                     Warren, Champion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c900f21e53cb4e4036ea871c5874193e = L.marker(
+                [39.1098936, -82.5331251],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_2f7113b33720945bfe2e83d7671dd37c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_444bff6a19ed1ce6ec48d236f8b22a42 = $(`<div id="html_444bff6a19ed1ce6ec48d236f8b22a42" style="width: 100.0%; height: 100.0%;">     <b>Wellston</b><br>     Pastor: Barry Benson<br>     1422 South New York Avenue, Wellston, OH 45692<br>     Phone: 740/384-3330<br>     <b>District 26 - John Hocker(DO)</b>     </div>`)[0];
+                popup_2f7113b33720945bfe2e83d7671dd37c.setContent(html_444bff6a19ed1ce6ec48d236f8b22a42);
+            
+        
+
+        marker_c900f21e53cb4e4036ea871c5874193e.bindPopup(popup_2f7113b33720945bfe2e83d7671dd37c)
+        ;
+
+        
+    
+    
+            marker_c900f21e53cb4e4036ea871c5874193e.bindTooltip(
+                `<div>
+                     Wellston
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dcd00aaacebda644cd9f744f4cc96400 = L.marker(
+                [39.6704082, -84.2579462],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_2bb775abfc6d4ed1529ed7b668c2543b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4099c6306890fd8fafb58e73339841dc = $(`<div id="html_4099c6306890fd8fafb58e73339841dc" style="width: 100.0%; height: 100.0%;">     <b>West Carrollton, Harvest Point</b><br>     Pastor: Marcus Begley<br>     426 West Main Street, West Carrollton, OH 45449<br>     Phone: 513/435-1722<br>     <b>District 18 - Chris Cramer(DO)</b>     </div>`)[0];
+                popup_2bb775abfc6d4ed1529ed7b668c2543b.setContent(html_4099c6306890fd8fafb58e73339841dc);
+            
+        
+
+        marker_dcd00aaacebda644cd9f744f4cc96400.bindPopup(popup_2bb775abfc6d4ed1529ed7b668c2543b)
+        ;
+
+        
+    
+    
+            marker_dcd00aaacebda644cd9f744f4cc96400.bindTooltip(
+                `<div>
+                     West Carrollton, Harvest Point
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c12ed0e92486e683d0e05176fa668223 = L.marker(
+                [38.7594463, -83.0232632],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_c92f2d0cf43f92e5d2e20c0f9d5c1b9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5c28a1107e7a4454842dc573d749923 = $(`<div id="html_d5c28a1107e7a4454842dc573d749923" style="width: 100.0%; height: 100.0%;">     <b>West Portsmouth, New Beginning</b><br>     Pastor: James H. Lens<br>     227 Maple St, West Portsmouth, OH 45663<br>     Phone: 740/858-4411<br>     <b>District 27 - Dean Thompson(DO)</b>     </div>`)[0];
+                popup_c92f2d0cf43f92e5d2e20c0f9d5c1b9c.setContent(html_d5c28a1107e7a4454842dc573d749923);
+            
+        
+
+        marker_c12ed0e92486e683d0e05176fa668223.bindPopup(popup_c92f2d0cf43f92e5d2e20c0f9d5c1b9c)
+        ;
+
+        
+    
+    
+            marker_c12ed0e92486e683d0e05176fa668223.bindTooltip(
+                `<div>
+                     West Portsmouth, New Beginning
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f8874c138c746427b56750b72a9d0078 = L.marker(
+                [40.9714448, -82.1098748],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_5a4d45824ec129be7523178ae6e1b61d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_164851ef1e0e67d61bcd770461a1abcc = $(`<div id="html_164851ef1e0e67d61bcd770461a1abcc" style="width: 100.0%; height: 100.0%;">     <b>West Salem</b><br>     Pastor: Charles Burgess<br>     P. O. Box 391, West Salem, OH 44287<br>     Phone: 419/853-3151<br>     <b>District 13 - Francis Burkhart(DO)</b>     </div>`)[0];
+                popup_5a4d45824ec129be7523178ae6e1b61d.setContent(html_164851ef1e0e67d61bcd770461a1abcc);
+            
+        
+
+        marker_f8874c138c746427b56750b72a9d0078.bindPopup(popup_5a4d45824ec129be7523178ae6e1b61d)
+        ;
+
+        
+    
+    
+            marker_f8874c138c746427b56750b72a9d0078.bindTooltip(
+                `<div>
+                     West Salem
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_370bd3c2e12573e7b10b3a671b9e9f12 = L.marker(
+                [39.435915, -83.851079],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_5a40479a5dd77751e73ded30a71bf8e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3702bcb100535ecda5da845414695b2 = $(`<div id="html_b3702bcb100535ecda5da845414695b2" style="width: 100.0%; height: 100.0%;">     <b>Wilmington</b><br>     Pastor: Rich Boll III<br>     100 R Gordon Drive, Wilmington, OH 45177<br>     Phone: 937/382-1587<br>     <b>District 25 - John Coyle(DO)</b>     </div>`)[0];
+                popup_5a40479a5dd77751e73ded30a71bf8e8.setContent(html_b3702bcb100535ecda5da845414695b2);
+            
+        
+
+        marker_370bd3c2e12573e7b10b3a671b9e9f12.bindPopup(popup_5a40479a5dd77751e73ded30a71bf8e8)
+        ;
+
+        
+    
+    
+            marker_370bd3c2e12573e7b10b3a671b9e9f12.bindTooltip(
+                `<div>
+                     Wilmington
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a4088ce7b8e8a88f25ad1ba8bb91f753 = L.marker(
+                [40.8218204, -81.8965102],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_ea8e2cf637870e5b5884c118ea568b9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ce066bb1deb37adb70b5ea31c333dfe = $(`<div id="html_1ce066bb1deb37adb70b5ea31c333dfe" style="width: 100.0%; height: 100.0%;">     <b>Wooster, Mt. Zion</b><br>     Pastor: Larry Martinez<br>     837 S. Geyers Chapel Rd., Wooster, OH 44691<br>     Phone: 330/264-0900<br>     <b>District 09 - Webb Parsons(DO)</b>     </div>`)[0];
+                popup_ea8e2cf637870e5b5884c118ea568b9a.setContent(html_1ce066bb1deb37adb70b5ea31c333dfe);
+            
+        
+
+        marker_a4088ce7b8e8a88f25ad1ba8bb91f753.bindPopup(popup_ea8e2cf637870e5b5884c118ea568b9a)
+        ;
+
+        
+    
+    
+            marker_a4088ce7b8e8a88f25ad1ba8bb91f753.bindTooltip(
+                `<div>
+                     Wooster, Mt. Zion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4ab4059db4e967d4c28d52bddfd402bc = L.marker(
+                [39.680916, -83.977027],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_564041705f80562e46ff90106ec4d4e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e32a7b595d4b95722ebff844a72c5c31 = $(`<div id="html_e32a7b595d4b95722ebff844a72c5c31" style="width: 100.0%; height: 100.0%;">     <b>Xenia, Liberty Life Church</b><br>     Pastor: Todd A. Martin<br>     1180 Upper Bellbrook Rd., Xenia, OH 45385<br>     Phone: 937/372-0279<br>     <b>District 23 - Todd Martin(DO)</b>     </div>`)[0];
+                popup_564041705f80562e46ff90106ec4d4e8.setContent(html_e32a7b595d4b95722ebff844a72c5c31);
+            
+        
+
+        marker_4ab4059db4e967d4c28d52bddfd402bc.bindPopup(popup_564041705f80562e46ff90106ec4d4e8)
+        ;
+
+        
+    
+    
+            marker_4ab4059db4e967d4c28d52bddfd402bc.bindTooltip(
+                `<div>
+                     Xenia, Liberty Life Church
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_adbbe52f1733a690f3c40873033bb48e = L.marker(
+                [41.06088, -80.646342],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_92bcbc617c2e69a5fb6bfa3e943d2063 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90ca746da35e87e07907efa5cec0b7c8 = $(`<div id="html_90ca746da35e87e07907efa5cec0b7c8" style="width: 100.0%; height: 100.0%;">     <b>Youngstown, Faith Fellowship</b><br>     Pastor: Stephen Turner<br>     388 E. Midlothian Blvd., Youngstown, OH 44507<br>     Phone: 234/254-8138<br>     <b>District 13 - Francis Burkhart(DO)</b>     </div>`)[0];
+                popup_92bcbc617c2e69a5fb6bfa3e943d2063.setContent(html_90ca746da35e87e07907efa5cec0b7c8);
+            
+        
+
+        marker_adbbe52f1733a690f3c40873033bb48e.bindPopup(popup_92bcbc617c2e69a5fb6bfa3e943d2063)
+        ;
+
+        
+    
+    
+            marker_adbbe52f1733a690f3c40873033bb48e.bindTooltip(
+                `<div>
+                     Youngstown, Faith Fellowship
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_03ec5b40455f348c5580d9e1b16ecb05 = L.marker(
+                [39.9309013, -81.9727604],
+                {
+}
+            ).addTo(marker_cluster_fd21573c29ab5a5680892f5f9d730d3c);
+        
+    
+        var popup_da094356af56d8f4562cb23785357d95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c8da2c677e93c48a66e833f01139034 = $(`<div id="html_2c8da2c677e93c48a66e833f01139034" style="width: 100.0%; height: 100.0%;">     <b>Zanesville,Tree of Life</b><br>     Pastor: Robert Osburn<br>     2220 Chandlersville Road, Zanesville, OH 43701<br>     Phone: 740/452-8807<br>     <b>District 17 - Mike Roehrenbeck(DO)</b>     </div>`)[0];
+                popup_da094356af56d8f4562cb23785357d95.setContent(html_2c8da2c677e93c48a66e833f01139034);
+            
+        
+
+        marker_03ec5b40455f348c5580d9e1b16ecb05.bindPopup(popup_da094356af56d8f4562cb23785357d95)
+        ;
+
+        
+    
+    
+            marker_03ec5b40455f348c5580d9e1b16ecb05.bindTooltip(
+                `<div>
+                     Zanesville,Tree of Life
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_fd21573c29ab5a5680892f5f9d730d3c.addTo(map_28568eeca6c64cb4a85fb579937ba5ac);
+        
+    
+
+        function geo_json_a09e28190fb515c76e0a3233b8e3e59f_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a09e28190fb515c76e0a3233b8e3e59f = L.geoJson(null, {
+                onEachFeature: geo_json_a09e28190fb515c76e0a3233b8e3e59f_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_a09e28190fb515c76e0a3233b8e3e59f_add (data) {
+            geo_json_a09e28190fb515c76e0a3233b8e3e59f
+                .addData(data);
+        }
+            geo_json_a09e28190fb515c76e0a3233b8e3e59f_add({"features": [{"geometry": {"coordinates": [-81.4337333, 41.0455414], "type": "Point"}, "properties": {"name": "Akron, Albrecht Ave."}, "type": "Feature"}, {"geometry": {"coordinates": [-81.4536264, 41.0597968], "type": "Point"}, "properties": {"name": "Akron, East Market Street"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.3206311, 40.8797839], "type": "Point"}, "properties": {"name": "Ashland, Ashland"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.7916761, 41.8862704], "type": "Point"}, "properties": {"name": "Ashtabula"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1474785, 39.1046922], "type": "Point"}, "properties": {"name": "Batavia, Owensville"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.07565, 39.768512], "type": "Point"}, "properties": {"name": "Beavercreek"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.5858277, 39.2748138], "type": "Point"}, "properties": {"name": "Belpre, Father\u0027s House"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.84149, 41.2345967], "type": "Point"}, "properties": {"name": "Brunswick, Trinity Chapel"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.4332348, 40.8292409], "type": "Point"}, "properties": {"name": "Canton, Woodlawn Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.6863304, 40.3113453], "type": "Point"}, "properties": {"name": "Centerburg"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.6167738, 39.1419456], "type": "Point"}, "properties": {"name": "Cincinnati, Bridge of Hope"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.4576022, 39.154697], "type": "Point"}, "properties": {"name": "Cincinnati, Cameron Avenue"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.470452, 39.2073675], "type": "Point"}, "properties": {"name": "Cincinnati, Metropolitan Harvest"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.5746129, 39.1947373], "type": "Point"}, "properties": {"name": "Cincinnati, Praise Chapel"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.928576, 39.6062311], "type": "Point"}, "properties": {"name": "Circleville, Nicholas Drive"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.773958, 41.454061], "type": "Point"}, "properties": {"name": "Cleveland, Freedom Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.7148026, 41.4300265], "type": "Point"}, "properties": {"name": "Cleveland, Pearlbrook"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.780796, 41.4187666], "type": "Point"}, "properties": {"name": "Cleveland, Soldiers for God Ministries-Cleveland"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.726001, 41.4681136], "type": "Point"}, "properties": {"name": "Cleveland, West 58th St."}, "type": "Feature"}, {"geometry": {"coordinates": [-82.974936, 41.2953389], "type": "Point"}, "properties": {"name": "Clyde"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.0927439, 39.9281027], "type": "Point"}, "properties": {"name": "Columbus, Clime Road"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.093748, 39.9747017], "type": "Point"}, "properties": {"name": "Columbus, Embassy of God"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.9178051, 40.0619554], "type": "Point"}, "properties": {"name": "Columbus, Life Church at Easton"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.9869441, 39.8929817], "type": "Point"}, "properties": {"name": "Columbus, Parsons Avenue"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.1747211, 40.1178294], "type": "Point"}, "properties": {"name": "Columbus, Soldiers for God Ministries-Columbus"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.092066, 39.973312], "type": "Point"}, "properties": {"name": "Columbus, The Potter\u0027s House"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.5715336, 41.9367298], "type": "Point"}, "properties": {"name": "Conneaut"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.4873272, 41.1357927], "type": "Point"}, "properties": {"name": "Cuyahoga Falls"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1739678, 39.7740655], "type": "Point"}, "properties": {"name": "Dayton, Air Street"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1251577, 39.7597441], "type": "Point"}, "properties": {"name": "Dayton, Eastview"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1373714, 39.7688938], "type": "Point"}, "properties": {"name": "Dayton, Evangel"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.3334516, 41.2814414], "type": "Point"}, "properties": {"name": "Defiance, Rock of Ages"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.0577703, 40.3043071], "type": "Point"}, "properties": {"name": "Delaware, Life Builders Worship Center"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.4676689, 40.5117583], "type": "Point"}, "properties": {"name": "Dover, New Life"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.5917053, 40.6259391], "type": "Point"}, "properties": {"name": "East Liverpool, Tree of Life COG"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.6299149, 39.7381404], "type": "Point"}, "properties": {"name": "Eaton, Open Door"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.5092852, 41.5983719], "type": "Point"}, "properties": {"name": "Euclid, Living Waters"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.0324267, 39.8023758], "type": "Point"}, "properties": {"name": "Fairborn, Risen Hope Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.3936794, 39.1428171], "type": "Point"}, "properties": {"name": "Fairfax, New Life Worship Center"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.6591799, 41.0736189], "type": "Point"}, "properties": {"name": "Findlay, The Upper Room"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.4154709, 41.1566833], "type": "Point"}, "properties": {"name": "Fostoria"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.846811, 38.6241118], "type": "Point"}, "properties": {"name": "Franklin Furnace, Franklin Furnace Church of God"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.2813097, 39.5662183], "type": "Point"}, "properties": {"name": "Franklin, Freedom Worship Center"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.11745, 41.344219], "type": "Point"}, "properties": {"name": "Fremont, River of Life"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.9164983, 41.8058024], "type": "Point"}, "properties": {"name": "Geneva, Evangel Temple"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.346609, 39.622982], "type": "Point"}, "properties": {"name": "Germantown, Connection Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1336669, 39.2629563], "type": "Point"}, "properties": {"name": "Goshen, The Remnant Church of God"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.098553, 39.8765645], "type": "Point"}, "properties": {"name": "Grove City, Connection Pointe Church of God"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.6191696, 39.405996], "type": "Point"}, "properties": {"name": "Hamilton"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.5878578, 39.4117575], "type": "Point"}, "properties": {"name": "Hamilton, Harvest Christian Fellowship"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.2614248, 39.2700358], "type": "Point"}, "properties": {"name": "Hamilton, Rivers of Life"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.5281055, 39.3755877], "type": "Point"}, "properties": {"name": "Hamilton, Tylersville Worship Center"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.7951243, 39.2619002], "type": "Point"}, "properties": {"name": "Harrison, New Haven Fam Wor Cntr"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.156969, 40.041984], "type": "Point"}, "properties": {"name": "Hilliard, New Beginnings"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.611587, 39.2022866], "type": "Point"}, "properties": {"name": "Hillsboro, Carpenter\u0027s House of Prayer"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1091152, 39.8466845], "type": "Point"}, "properties": {"name": "Huber Heights, New Beginnings"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.6767675, 40.1461265], "type": "Point"}, "properties": {"name": "Johnstown"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1254541, 39.6758782], "type": "Point"}, "properties": {"name": "Kettering, Naioth Church of God"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1254541, 39.6758782], "type": "Point"}, "properties": {"name": "Kettering, Oak Creek"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.124713, 39.7265539], "type": "Point"}, "properties": {"name": "Kettering, Shepherd\u0027s Fold"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.5887012, 39.7380326], "type": "Point"}, "properties": {"name": "Lancaster, The Gathering Church of God"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1842991, 39.4500816], "type": "Point"}, "properties": {"name": "Lebanon, City Gate Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.0486513, 41.8118683], "type": "Point"}, "properties": {"name": "Madison, Lake Erie"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.436355, 39.425398], "type": "Point"}, "properties": {"name": "Marietta"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.0980899, 40.6001028], "type": "Point"}, "properties": {"name": "Marion, Victory Center"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.5107611, 40.7884087], "type": "Point"}, "properties": {"name": "Massillon, Link Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.3534075, 41.6474892], "type": "Point"}, "properties": {"name": "Mentor, Christian L.I.F.E."}, "type": "Feature"}, {"geometry": {"coordinates": [-81.2969796, 41.7199964], "type": "Point"}, "properties": {"name": "Mentor, East Heisley"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.2542177, 39.6388057], "type": "Point"}, "properties": {"name": "Miamisburg, Rejoicing Life"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.3506072, 39.5288406], "type": "Point"}, "properties": {"name": "Middletown, Stratford Heights"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.3807955, 39.5062005], "type": "Point"}, "properties": {"name": "Monroe, Hope City Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.4416855, 40.0586058], "type": "Point"}, "properties": {"name": "Newark Heights"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.6092605, 40.2734115], "type": "Point"}, "properties": {"name": "Newcomerstown, New Beginnings Church of God"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.7763693, 41.172741], "type": "Point"}, "properties": {"name": "Niles, Praise Cathedral"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.9894442, 41.4030713], "type": "Point"}, "properties": {"name": "North Ridgeville, The River"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.6116483, 41.2443174], "type": "Point"}, "properties": {"name": "Norwalk, Maple City"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.4739374, 39.4987054], "type": "Point"}, "properties": {"name": "Oxford, Ambassadors\u0027 Pointe Community Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.769182, 41.395006], "type": "Point"}, "properties": {"name": "Parma, Parma Park"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.658689, 40.991659], "type": "Point"}, "properties": {"name": "Plymouth"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.9356085, 38.7637246], "type": "Point"}, "properties": {"name": "Portsmouth, High Praises"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.8137114, 39.2034178], "type": "Point"}, "properties": {"name": "Richmond Dale"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.7814829, 40.9650113], "type": "Point"}, "properties": {"name": "Rittman"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.0506811, 40.9160714], "type": "Point"}, "properties": {"name": "Sebring, New Hope"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.0763394, 41.4619979], "type": "Point"}, "properties": {"name": "Sheffield"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.6562749, 40.9085715], "type": "Point"}, "properties": {"name": "Shelby, Connect Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1690184, 40.2883184], "type": "Point"}, "properties": {"name": "Sidney"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.563334, 38.427549], "type": "Point"}, "properties": {"name": "South Point, Tri-State Worship Center"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.5228353, 41.6175461], "type": "Point"}, "properties": {"name": "Toledo, Harvest Tabernacle Christian Life Center"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.4475132, 39.481323], "type": "Point"}, "properties": {"name": "Trenton, World Harvest"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.3457716, 40.3945137], "type": "Point"}, "properties": {"name": "Uhrichsville, Bethel Worship Center"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.2830599, 40.8273607], "type": "Point"}, "properties": {"name": "Upper Sandusky, Liberty Church of God"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.8818368, 41.2377123], "type": "Point"}, "properties": {"name": "Valley City, River Life"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.1342203, 39.3554371], "type": "Point"}, "properties": {"name": "Warren, Champion"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.5331251, 39.1098936], "type": "Point"}, "properties": {"name": "Wellston"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.2579462, 39.6704082], "type": "Point"}, "properties": {"name": "West Carrollton, Harvest Point"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.0232632, 38.7594463], "type": "Point"}, "properties": {"name": "West Portsmouth, New Beginning"}, "type": "Feature"}, {"geometry": {"coordinates": [-82.1098748, 40.9714448], "type": "Point"}, "properties": {"name": "West Salem"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.851079, 39.435915], "type": "Point"}, "properties": {"name": "Wilmington"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.8965102, 40.8218204], "type": "Point"}, "properties": {"name": "Wooster, Mt. Zion"}, "type": "Feature"}, {"geometry": {"coordinates": [-83.977027, 39.680916], "type": "Point"}, "properties": {"name": "Xenia, Liberty Life Church"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.646342, 41.06088], "type": "Point"}, "properties": {"name": "Youngstown, Faith Fellowship"}, "type": "Feature"}, {"geometry": {"coordinates": [-81.9727604, 39.9309013], "type": "Point"}, "properties": {"name": "Zanesville,Tree of Life"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_a09e28190fb515c76e0a3233b8e3e59f.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_a09e28190fb515c76e0a3233b8e3e59f.addTo(map_28568eeca6c64cb4a85fb579937ba5ac);
+        
+    
+            var geo_json_a09e28190fb515c76e0a3233b8e3e59fsearchControl = new L.Control.Search({
+                layer: geo_json_a09e28190fb515c76e0a3233b8e3e59f,
+                
+                propertyName: 'name',
+                
+                collapsed: false,
+                textPlaceholder: 'Search for a church...',
+                position:'topleft',
+            
+                initial: false,
+                
+                hideMarkerOnCollapse: true
+            
+                });
+                geo_json_a09e28190fb515c76e0a3233b8e3e59fsearchControl.on('search:locationfound', function(e) {
+                    geo_json_a09e28190fb515c76e0a3233b8e3e59f.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                geo_json_a09e28190fb515c76e0a3233b8e3e59fsearchControl.on('search:collapsed', function(e) {
+                        geo_json_a09e28190fb515c76e0a3233b8e3e59f.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_28568eeca6c64cb4a85fb579937ba5ac.addControl( geo_json_a09e28190fb515c76e0a3233b8e3e59fsearchControl );
+
+        
+    
+            var layer_control_4c7a549bcc725d783afe0bd9d8fb82fb_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_93dcfff89b6c0a492b33206710bd43d4,
+                },
+                overlays :  {
+                    "Churches" : marker_cluster_fd21573c29ab5a5680892f5f9d730d3c,
+                    "Search Layer" : geo_json_a09e28190fb515c76e0a3233b8e3e59f,
+                },
+            };
+            let layer_control_4c7a549bcc725d783afe0bd9d8fb82fb = L.control.layers(
+                layer_control_4c7a549bcc725d783afe0bd9d8fb82fb_layers.base_layers,
+                layer_control_4c7a549bcc725d783afe0bd9d8fb82fb_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_28568eeca6c64cb4a85fb579937ba5ac);
+
+        
+</script>
+</html>
